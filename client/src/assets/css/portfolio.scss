@@ -1,0 +1,232 @@
+//@import url(https://www.w3schools.com/w3css/4/w3.css);
+
+$white: #ffffff;
+$lightBG: #dce1df;
+$salmon: #ff6666;
+$teal: #0096a0;
+$tealMid: #0ebac7;
+$tealContrast: #33ffff;
+$tealShade:	#007c85;
+$darkGrey: #4f585e;
+$blue : #0a4870;
+$smalt-blue:#75dfd1;
+$border-radius: 4px;
+$box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+
+
+#cards__container {
+  background: $lightBG;
+  color: $darkGrey;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 50px auto;
+  max-width: 75vw;
+  text-align: center;
+}
+
+.card__ {
+  background: $white;
+  display: inline-block;
+  margin: 20px;
+  max-width: 300px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+
+  img {
+    max-width: 300px;
+  }
+  
+  .card__image-holder {
+    background: rgba(0,0,0,0.1);
+    height: 0;
+    padding-bottom: 75%;
+  }
+
+  .card__title {
+    background: $white;
+    padding: 6px 15px 10px;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    
+    
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 0;
+      padding: 0;  
+    }
+
+    small {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+        text-align: left;
+      }
+  }
+
+  .card__description {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .card__actions {
+  	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+  }
+  
+  .card__flap {
+    background: darken($white,15);
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    transition: all 0.3s 0.3s ease-out;
+  }
+ 
+}
+
+.card__:hover {
+  transform: scale(1.05) translateZ(0);
+  opacity: 1 !important;
+  cursor: pointer;
+  //transform: scale(1) !important;
+}
+
+//este es el efecto
+#cards__container:hover > .card__:not(:hover) {
+  //filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  transform: scale(0.88);
+  opacity: 0.3;
+}
+//fin efecto
+
+._wrapper{
+    font-family: 'Lato';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    max-width: 650px;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 290px;
+}
+._card{
+    flex: 1;
+    flex-basis: 100vh;
+    flex-grow: 0;
+    height: 80vh;
+    background: #fff;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+    border-radius: $border-radius;
+
+    &:hover {
+        transition: all .2s cubic-bezier(.8,.5,.2,1.4);
+        box-shadow: $box-shadow;
+        transform: scale(.97);
+        border-radius: $border-radius;
+    }
+}
+._card img{
+    width: 100%;
+    height:100%;
+    transition: all .2s cubic-bezier(.8,.5,.2,1.4);
+}
+._descriptions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    transition: all .2s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+    
+    a{ 
+        width: fit-content;
+        text-decoration: none;
+        cursor: pointer;
+        border-style: none;
+        outline: none;
+        box-shadow: $box-shadow;
+        transition: all .5s ease-in-out;     
+        border: 1px solid $smalt-blue;
+        background-color: $blue;
+        padding: 3px 8px;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: white;
+        cursor: pointer; 
+        border-radius: $border-radius; 
+        &:hover {
+            transform: scale(.95) translateX(-5px);
+            transition: all .5s ease-in-out;
+            background-color:  $smalt-blue;  
+            border:  2px solid $blue;      
+            color: $blue;
+        }
+      }
+     h3{
+        position: relative;
+        &::after{
+            content: '';       
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;   
+            height: 3px;
+            width: 50px;
+            margin: auto;   
+            background: $blue;
+          }}
+
+    //   h5{
+        
+    //   }    
+      
+      h3, h5 {
+            color: $blue;}
+     
+      p{
+            line-height: 24px;
+            height: 70%;
+            text-align: justify;}
+}
+   
+._card:hover ._descriptions{
+    left:0px;
+    transition: all .2s ease-in-out;
+    clip-path: circle(75%);
+}
+
+._card:hover img{
+    transition: all .2s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(5deg);
+    filter: blur(3px);
+}
+
+
+
+

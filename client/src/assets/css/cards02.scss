@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+//@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+//== Variables ==//
+$gutter: 15px;
+$grid: 12;
+
+$black: #000;
+$gray: #ddd;
+$white: #fff;
+
+//== Mixins ==//
+@mixin column($numCol) {
+	width: percentage($numCol/$grid);
+}
+
+@mixin whiteSpace($space) {
+	padding-left: $space;
+	padding-right: $space;
+}
+
+//== Placeholders ==//
+%clearFix {
+	&:before, &:after {
+		content: "";
+    display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+}
+
+%commonCol {
+	float: left;
+	min-height: 1px;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	position: relative;
+}
+
+%autoMargin {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%cardCommon {
+	backface-visibility: hidden;
+	background-color: $white;
+	border-radius: 0.3rem;
+	box-shadow: 0.15rem 0.15rem 0.1rem 0 rgba($black, 0.3);
+	color: darken($gray, 50%);
+	cursor: pointer;
+	overflow: hidden;
+	transform-style: preserve-3d;	
+	transition: 0.75s;	
+}
+
+//== Content ==//
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+} 
+
+html,
+body {
+	background-color: $gray;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;	
+}
+
+html,
+body,
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+.header {
+	@extend %autoMargin;
+	@extend %clearFix;
+	@include whiteSpace(2rem);
+	
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.headerBlock {
+	@extend %commonCol;
+	@include column(12);
+	
+	align-items: center;
+	display: flex;
+	font-size: 2rem;
+	height: 5rem;
+}
+
+.content {
+	@extend %autoMargin;
+	@extend %clearFix;
+	@include whiteSpace(2rem);
+	
+	margin-bottom: 5rem;
+}
+
+.contentBlock {
+	@extend %commonCol;
+	@include column(4);
+	
+	perspective: 50rem;
+	perspective-origin: center top;
+
+	img {
+		height: auto;
+		width: 100%;		
+	}
+	
+	&:hover {
+		.cardFrontSide {
+			transform: rotateY(-180deg);
+		}
+		
+		.cardBackSide {
+			transform: rotateY(0);
+		}
+	}
+	z-index: 0;
+	
+	
+}
+
+ //este es el efecto
+ .content:hover > .contentBlock:not(:hover) .cardFrontSide{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  //fin efecto
+
+
+.cardFrontSide {
+	@extend %cardCommon;
+	
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.cardFrontContent {
+	position: relative;
+	z-index: 0;
+	height: 90px;
+	  
+	padding: 0.5rem 1rem 1rem;
+	
+	h2 {
+		color: darken($gray, 60%);
+		padding-bottom: 0.5rem;		
+	}
+
+//aqui empeza lo que se quiere meter
+	.details,
+	.details ul {
+	  margin: auto;
+	  padding: 0;
+	  list-style: none;
+	}
+	
+	.details {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+
+	  margin: auto;
+	  transition: left .2s; 
+	  color: $black;
+	  padding: 10px;
+	  width: 100%;
+	  font-size: .9rem;
+	  a {
+		text-decoration: dotted underline
+	  }
+	  ul li {
+		display: inline-block;
+	  }
+	  .name:before {
+		font-family: FontAwesome;
+		margin-right: 10px;
+		content: "\f02c";
+	  }
+	
+	  .date:before {
+		font-family: FontAwesome;
+		margin-right: 10px;
+		content: "\f784";
+	  }
+	
+	  .code {
+		ul:before {
+		  font-family: FontAwesome;
+		  content: "\f121";
+		  margin-right: 10px;
+		}
+		li {
+		  margin-right: 2px;
+		  &:first-child {
+			margin-left: -4px;
+		  }
+		}
+	  }
+	}
+	//aqui termina
+}
+
+.cardBackSide {
+	@extend %cardCommon;
+	
+	height: 100%;	
+	left: $gutter;
+	padding: 1rem;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	width: calc(100% - (#{$gutter} * 2));
+}
+
+
