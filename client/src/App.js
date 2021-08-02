@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import './App.css';
 import Header from './components/Header'
 import About from './components/About';
@@ -14,16 +14,16 @@ import Testimonials from './components/Testimonials';
 
 const App = () => {
   
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(null)
 
   useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => setData(data.message))
   }, []);
 
   return (
-    <> 
+    <>
       <p>{!data ? "Loading..." : data}</p>
       <Header />
        <About />
@@ -36,7 +36,7 @@ const App = () => {
        <Testimonials/>
        <Footer />
     </>
-  );
+  )
 }
 
 export default App;
