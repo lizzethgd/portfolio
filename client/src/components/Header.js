@@ -8,9 +8,9 @@ import ScrollDown from "./ScrollDown";
 const Header = () => {
 
     
-  const [data, setData] = useState(null)
+ /*  const [data, setData] = useState(null)
 
- /*  useEffect(() => {
+  useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => setData(data.message))
