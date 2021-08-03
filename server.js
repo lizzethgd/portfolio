@@ -1,7 +1,7 @@
 require('dotenv').config()
-const path = require('path');
 const express = require("express");
 const cors = require('cors');
+const path = require('path');
 
 const PORT = process.env.PORT || 5000;
 
@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 // Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+app.use(express.static(path.resolve(__dirname, '/client/build')));
 
 
 // Handle GET requests to /api route
@@ -24,5 +24,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
+  console.log(`Server listening for requests on ${PORT}`);
 });
