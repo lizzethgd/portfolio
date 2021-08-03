@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-import {useState, useEffect} from "react";
-import './App.css';
 import Header from './components/Header'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -12,19 +9,11 @@ import Timeline01 from './components/Timeline01';
 import Timeline02 from './components/Timeline02';
 import Testimonials from './components/Testimonials';
 
-const App = () => {
-  
-  const [data, setData] = useState(null)
+const Home = () => {
 
- /*  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message))
-  }, []); */
 
   return (
     <>
-      {/* <p>{!data ? "Loading..." : data}</p> */}
       <Header />
        <About />
        <Timeline/>
@@ -39,4 +28,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default Home;
