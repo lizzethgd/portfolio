@@ -11,6 +11,8 @@ const Contact = () => {
     subject: '',
     message: ''
   })  
+
+  const [contact_me, setContact_me] =useState(false)
   
   const {name, email, phone, subject, message} = mail
   
@@ -18,9 +20,11 @@ const Contact = () => {
     setMail({ ...mail, [e.target.name]: e.target.value })
 }
 
+const handleCheckbox = () =>{setContact_me(!contact_me)}
+
 const handleSubmit = e => {
   e.preventDefault();
-  sendMail(name, email, phone, subject, message)
+  sendMail(name, email, phone, subject, message, contact_me)
 }
 
     const Parallax = {
@@ -70,7 +74,7 @@ const handleSubmit = e => {
           </div>
             <textarea className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Message" required name='message' onChange={handleChange}/>
           <div className="w3-section">
-          <input className="w3-check " type="checkbox" readOnly name="Like" />
+          <input className="w3-check " type="checkbox" name="contact_me" checked={contact_me} onChange={handleCheckbox}/>
           <label><em> I'd love your feedback!</em></label>
           <button className="w3-button w3-right w3-teal" type="submit" onClick={handleSubmit}>
             <i className="fa fa-paper-plane"></i> SEND

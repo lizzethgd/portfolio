@@ -4,12 +4,13 @@ const nodemailer = require('nodemailer')
 const Contact= require('../models/Contact');
 
 router.post('/send', async (req,res,next) => {
-    const {name, email, phone, subject, message} = req.body
+    const {name, email, phone, subject, message, contact_me} = req.body
 
     Contact.create(req.body)
     .then(function(contact){
         res.send(contact)
     }).catch(next)
+    
 
     contentHTML= `
         <h1>Contact Information<h1>
@@ -18,6 +19,7 @@ router.post('/send', async (req,res,next) => {
         <li>Email: ${email}</li>
         ${phone!=undefined ? `<li>Phone: ${phone}</li>` : ' '} 
         <li>Subject: ${subject}</li>
+        <li>Contact me: ${contact_me}</li>
         </ul>
         <p>Message: ${message}</p>
      `

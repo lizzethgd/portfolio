@@ -21,6 +21,7 @@ mongoose.connect(process.env.DATABASE, {
 
 // initialize routes
 app.use('/contact_form', require('./server/routes/contact_form'));
+app.use('/testimonial_form', require('./server/routes/testimonial_form'));
 
 // Have Node serve the files for our built React app
 app.use(express.static(path.join(__dirname, '/client/build')));

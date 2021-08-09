@@ -64,11 +64,11 @@ const Portfolio = () => {
         document.getElementById("imagen").src = content[id].img; 
         document.getElementById("title").innerHTML = content[id].title;
         document.getElementById("description").innerHTML = content[id].description;
-        document.getElementById("modal").style.display = "block";
+        document.getElementById("exemplar").style.display = "block";
       } 
       
       const onClouseFullSizeImage = () => {
-        document.getElementById("modal").style.display='none'
+        document.getElementById("exemplar").style.display='none'
       }
       
       
@@ -101,7 +101,7 @@ const Portfolio = () => {
 </div> 
 
 {/* <!-- Modal for full size images on click--> */}
- <div id="modal" className="w3-modal w3-gray" >
+ <div id="exemplar" className="w3-modal w3-gray" >
  <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
  <div className="_wrapper">
         <div className="_card">

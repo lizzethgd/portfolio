@@ -10,18 +10,30 @@
     overflow: hidden;
   }
   #testimonials .text-container {
-    padding-top: 96px;
-    padding-bottom: 66px;
+    padding: 75px 100px 70px;
   }
   #testimonials h1 {
-    font: 18px/24px "opensans-bold", sans-serif;
+    font: 20px "opensans-bold", sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #fff;
   }
+
+  #testimonials h6 {
+    font:  "opensans-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
   #testimonials h1 span {
     display: none;
   }
+
+  #testimonials a{
+    color: #fff;
+  }
+
   #testimonials .header-col {
     padding-top: 9px;
   }
@@ -38,8 +50,8 @@
   
   /*	Blockquotes */
   #testimonials blockquote {
-    margin: 0 0px 30px 0px;
-    padding-left: 0;
+    margin: 0;
+    padding: 10px 50px 0;
     position: relative;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
   }
@@ -48,8 +60,7 @@
   }
   #testimonials blockquote p {
     font-family: "librebaskerville-italic", serif;
-    padding: 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 48px;
     color: #fff;
   }
