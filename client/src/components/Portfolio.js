@@ -105,7 +105,7 @@ const Portfolio = () => {
  <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
  <div className="_wrapper">
         <div className="_card">
-            <img id='imagen' src="" />
+            <img id='imagen' alt='#' src="" />
             <div className="_descriptions">
                 <h3 id='title'></h3>
                 <h5 style={{float: 'left'}}> <FaTags/> </h5>

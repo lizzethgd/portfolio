@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import { CgClose } from "react-icons/cg";
 import "slick-carousel/slick/slick-theme.css";
 import {useState} from 'react'
-import {sendTestimonial} from '../apiCore'
+import {sendTestimonial} from '../services/TestimonialService'
 //import '../assets/css/modal.scss'
 
 const onButtonClick = () => {

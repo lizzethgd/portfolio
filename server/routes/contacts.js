@@ -10,7 +10,6 @@ router.post('/send', async (req,res,next) => {
     .then(function(contact){
         res.send(contact)
     }).catch(next)
-    
 
     contentHTML= `
         <h1>Contact Information<h1>

@@ -2,7 +2,7 @@ import { useEffect, useState} from 'react';
 import '../assets/css/navigation.css'
 import {IoHomeSharp} from "react-icons/io5"
 import {IoMdChatbubbles } from "react-icons/io"
-import {BsPersonBoundingBox, BsGrid3X3GapFill, BsChatSquareQuoteFill} from "react-icons/bs"
+import {BsPersonBoundingBox, BsGrid3X3GapFill} from "react-icons/bs"
 import {FaEnvelope} from "react-icons/fa"
 import {  GiFootprint } from "react-icons/gi";
 

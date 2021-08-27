@@ -1,6 +1,6 @@
 import Helsinki from "../assets/images/hel02.png";
 import {useState} from 'react'
-import {sendMail} from '../apiCore'
+import {sendMail} from '../services/ContactService'
 
 const Contact = () => {
 
@@ -25,6 +25,8 @@ const handleCheckbox = () =>{setContact_me(!contact_me)}
 const handleSubmit = e => {
   e.preventDefault();
   sendMail(name, email, phone, subject, message, contact_me)
+  setMail({ ...mail, name: '', email: '',  phone: '', subject: '',   message: ''})
+  setContact_me(false)
 }
 
     const Parallax = {
@@ -58,21 +60,21 @@ const handleSubmit = e => {
         <form onSubmit={handleSubmit} target="_self">
           <div className="w3-row-padding" style={{margin: '0 -16px 8px -16px'}}>
             <div className="w3-half">
-              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Name" required name='name' onChange={handleChange}/>
+              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Name" required name='name' value={name} onChange={handleChange}/>
             </div>
             <div className="w3-half">
-              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Email" required name='email' onChange={handleChange}/>
+              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Email" required name='email' value={email} onChange={handleChange}/>
             </div>
           </div>
           <div className="w3-row-padding" style={{margin: '0 -16px 8px -16px'}}>
             <div className="w3-half">
-              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Subject" required name='subject' onChange={handleChange}/>
+              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Subject" required name='subject' value={subject} onChange={handleChange}/>
             </div>
             <div className="w3-half">
-              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Phone (optional)" name='phone' onChange={handleChange}/>
+              <input className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Phone (optional)" name='phone' value={phone} onChange={handleChange}/>
             </div>
           </div>
-            <textarea className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Message" required name='message' onChange={handleChange}/>
+            <textarea className="w3-input w3-border w3-hover-border-teal" type="text" placeholder="Message" required name='message' value={message} onChange={handleChange}/>
           <div className="w3-section">
           <input className="w3-check " type="checkbox" name="contact_me" checked={contact_me} onChange={handleCheckbox}/>
           <label><em> I'd love your feedback!</em></label>
