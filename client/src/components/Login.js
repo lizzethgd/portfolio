@@ -4,13 +4,12 @@ import {AuthContext} from '../Context/AuthContext';
 import { CgClose } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 import '../assets/css/login.scss'
-import Message from '../components/Message'
 
 const Login = props => {
 
     const [userLogin, setUserLogin] = useState({username: '', password: ''}) 
     const authContext = useContext(AuthContext);
-    const [message,setMessage] = useState(null);
+    const [message,setMessage] = useState();
 
     const history = useHistory()  
 
@@ -21,23 +20,19 @@ const Login = props => {
 
     const handleSubmitLogin =  (e) => {
         e.preventDefault();
-       try{
-        AuthService.logIn(userLogin)
-        .then(data=>{
-            console.log(data);
-            const { isAuthenticated, user, message} = data;
-            if(isAuthenticated){
-                authContext.setUser(user);
-                authContext.setIsAuthenticated(isAuthenticated);
-                props.history.push('/admin');
-            }
-            else
-            setMessage(message);
-            
-        });
-      }catch(err){console.log(err.message)}
-       
-      }   
+            AuthService.logIn(userLogin).then(data=>{
+                console.log(data);
+                const { isAuthenticated,user} = data;
+                if(isAuthenticated){
+                    authContext.setUser(user);
+                    authContext.setIsAuthenticated(isAuthenticated);
+                    history.push('/admin');
+                }
+                else
+                    setMessage('no auth');
+            })
+    }
+
 
     const handleSubmitSignup = e => {
         e.preventDefault();
@@ -59,16 +54,14 @@ const Login = props => {
     }
     
     const loginShow = e => {
-        e.preventDefault(); 
-        let parent = e.target.parentNode;
-        let signupDiv = document.getElementById('signup');
-        Array.from(e.target.parentNode.classList).find((element) => {
-            if(element !== 'slide-up') {
-                parent.classList.add('slide-up')
-            }else{
-                signupDiv.parentNode.parentNode.classList.add('slide-up')
-                parent.classList.remove('slide-up')
-            }
+        e.preventDefault();
+        AuthService.logIn(userLogin).then(data=>{
+            console.log(data);
+            const { isAuthenticated,user} = data;
+                authContext.setUser(user);
+                authContext.setIsAuthenticated(isAuthenticated);
+                history.push('/admin');
+           
         });
     }
 
@@ -82,10 +75,11 @@ const Login = props => {
          
 <div id="log-container" className="w3-modal" style={{display: 'block'}}>
     <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
-      {message ? <Message message={message}/> : null}
     <div className="w3-modal-content w3-animate-zoom log-form-structor ">
+   
         
         <div className="login ">
+        {message ? <p>{message}</p>: null}
             <h2 className="log-form-title" id="login" onClick={e => loginShow(e)}><span>or</span>Log in </h2>
             <form onSubmit={handleSubmitLogin} target="_self">
                 <div className="log-form-holder">
@@ -97,6 +91,7 @@ const Login = props => {
         </div>
 
         <div className="signup slide-up">
+        {message ? <p>{message}</p>: null}
             <div className="log-center">
                 <h2 className="log-form-title" id="signup" onClick={e => signupShow(e)}><span>or</span>Sign up</h2>
                 <form onSubmit={handleSubmitSignup} target="_self">
@@ -117,3 +112,4 @@ const Login = props => {
 }
 
 export default Login
+

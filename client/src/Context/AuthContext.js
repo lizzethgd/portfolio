@@ -11,8 +11,8 @@ export default ({ children }) => {
 
    useEffect(()=>{
     AuthService.getAuthentication().then(data =>{
-            setUser(data.user ? data.user : { username: "", role: "" });
-            setIsAuthenticated(data.isAuthenticated ? data.isAuthenticated  : false)
+        setUser(data.user ? data.user : { username: "", role: "" });
+        setIsAuthenticated(data.isAuthenticated ? data.isAuthenticated  : false)
             setIsLoaded(true);
         });
     },[]);
@@ -31,26 +31,3 @@ export default ({ children }) => {
 }
 
 
-/* const [data, setData ] = useState({
-    user : {},
-    isAuthenticated: false,
-    isLoaded: false
-}); 
-
-const {user, isAuthenticated, isLoaded} = data 
-
-    const getData = useCallback(() => { 
-        const fetchData = async () => {
-            await getAuthentication().then(data =>{
-                setUser(data.user);
-                setIsAuthenticated(data.isAuthenticated);
-                setIsLoaded(true);
-        });
-    }
-    fetchData()
-    }, [])
-
- useEffect(()=>{ 
-        getData()
-    },[getData]);
-    */
