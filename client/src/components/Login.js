@@ -4,23 +4,26 @@ import {AuthContext} from '../Context/AuthContext';
 import { CgClose } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 import '../assets/css/login.scss'
+import Message from '../components/Message'
 
 const Login = props => {
 
-    const [user, setUser] = useState({username: '', password: ''}) 
+    const [userLogin, setUserLogin] = useState({username: '', password: ''}) 
     const authContext = useContext(AuthContext);
+    const [message,setMessage] = useState(null);
 
     const history = useHistory()  
 
     const handleChange = e => {
         e.preventDefault();
-        setUser({ ...user, [e.target.name]: e.target.value })
+        setUserLogin({ ...userLogin, [e.target.name]: e.target.value })
       }
 
     const handleSubmitLogin =  (e) => {
         e.preventDefault();
        try{
-        AuthService.logIn(user).then(data=>{
+        AuthService.logIn(userLogin)
+        .then(data=>{
             console.log(data);
             const { isAuthenticated, user, message} = data;
             if(isAuthenticated){
@@ -29,7 +32,7 @@ const Login = props => {
                 props.history.push('/admin');
             }
             else
-                console.log(message);
+            setMessage(message);
             
         });
       }catch(err){console.log(err.message)}
@@ -79,6 +82,7 @@ const Login = props => {
          
 <div id="log-container" className="w3-modal" style={{display: 'block'}}>
     <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
+      {message ? <Message message={message}/> : null}
     <div className="w3-modal-content w3-animate-zoom log-form-structor ">
         
         <div className="login ">
@@ -88,7 +92,7 @@ const Login = props => {
                     <input type="text" className="log-input" placeholder="Username" required name="username"  onChange={handleChange}/>
                     <input type="password" className="log-input" placeholder="Password" required name="password"  onChange={handleChange}/>
                 </div>
-                <button className="log-submit-btn"  onSubmit={handleSubmitLogin}>Log in</button>
+                <button className="log-submit-btn"  type='submit'>Log in</button>
             </form> 
         </div>
 
@@ -101,7 +105,7 @@ const Login = props => {
                         <input type="email" className="log-input" placeholder="Email" required name="email" onChange={handleChange}/>
                         <input type="password" className="log-input" placeholder="Password" required name="password" onChange={handleChange}/>
                     </div>
-                    <button className="log-submit-btn" onSubmit={handleSubmitSignup}>Sign up</button>
+                    <button className="log-submit-btn"type='submit'>Sign up</button>
                 </form>
             </div>
         </div>

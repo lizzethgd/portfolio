@@ -20,11 +20,6 @@ const NavAdmin = props => {
     history.push('/')
     }
 
-   /*  const logOut = () => {
-      onClickLogoutHandler()
-      history.push('/')
-    } */
-  
   let mySidebar = document.getElementById("mySidebar");
 
   const openMenu = () => {
@@ -60,7 +55,7 @@ const NavAdmin = props => {
       <NavLink to="/admin" className="w3-bar-item w3-button">Lizzeth<b>GD</b></NavLink>
       <div className="w3-left w3-hide-small">
         <NavLink to="/testimonialsList" className="w3-bar-item w3-button">Testimonials</NavLink>       
-        { (user===undefined || user.role !== "admin")  ? null  : adminNavLinksTop }
+        { ( user.role !== "admin")  ? null  : adminNavLinksTop }
       </div>
       <div className="w3-right w3-hide-small">
         <div className="w3-bar-item w3-button" onClick={onClickLogoutHandler}>LogOut</div>
@@ -76,15 +71,15 @@ const NavAdmin = props => {
   <nav className="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style={{display: 'none'}} id="mySidebar">
     <button onClick={closeMenu} className="w3-bar-item w3-button w3-large w3-padding-16">Close ×</button>
     <NavLink to="/testimonialsList" onClick={closeMenu} className="w3-bar-item w3-button">Testimonials</NavLink>
-    { (user===undefined  || user.role !== "admin") ?  null : adminNavLinksSideBar }
+    { ( user.role !== "admin") ?  null : adminNavLinksSideBar }
     <button onClick={onClickLogoutHandler} className="w3-bar-item w3-button w3-large w3-padding-16">LogOut</button>
   </nav>
   )
 
 return (
   <>
-  { (isAuthenticated === false ) ?  null : topNavBar }
-  { (isAuthenticated === false  ) ?  null : sideNavBar }
+  { (!isAuthenticated) ?  null : topNavBar }
+  { (!isAuthenticated) ?  null : sideNavBar }
   </>
  )}
 

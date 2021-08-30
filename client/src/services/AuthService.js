@@ -1,36 +1,29 @@
 export default {
 logIn : async user => {
-  await fetch('auth/signin', {
-    method: 'POST',
-    body: JSON.stringify(user),
-    headers : {
-      'Content-Type' : 'application/json'
-  }
-}).then(res => {
-  if(res.status !== 401)
-  {console.log('no hay un error aqui')
-    res.json().then(data => console.log(data))
+  const res = await fetch('auth/signin', {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: {
+        'Content-Type': 'application/json'
       }
-     
-  else
-      return { isAuthenticated : false, user : {username : "",role : ""}};
-})
+    });
+    if (res.status !== 401)
+      return res.json();
+    else
+      return { isAuthenticated: false, user: { username: "", role: "" } };
 },
 
 logOut : async () => {
   const res = await fetch('auth/signout');
-  const data = await res.json();
-  return data;
+  return await res.json();
 },
 
 getAuthentication : async ()=>{
-  return fetch('/auth/authenticated')
-  .then(res=>{
-      if(res.status !== 401)
-          return res.json().then(data => data);
-      else
-          return { isAuthenticated : false, user : {username : "",role : ""}};
-  });
+  const res = await fetch('/auth/authenticated');
+  if (res.status !== 401)
+    return res.json();
+  else
+    return { isAuthenticated: false, user: { username: "", role: "" } };
 },
   
 logUp : async user =>{
@@ -43,15 +36,21 @@ logUp : async user =>{
   });
   return await res.json();
 },
-getAdmin : ()=>{
-  return fetch('auth/admin')
-          .then(response=>{
-              if(response.status !== 401){
-                  return response.json().then(data => data);
-              }
-              else
-                  return {message : {msgBody : "UnAuthorized",msgError : true}};
-          });
+
+getAdmin : async ()=>{
+  const res = await fetch('auth/admin');
+  if (res.status !== 401) {
+    return res.json()
+  }
+
+  else
+    return { message: { msgBody: "UnAuthorized", msgError: true } };
 },
     
 }
+
+/* if (res.status !== 401)
+      return await res.json().then(data => data);
+else
+      return { isAuthenticated: false, user: { username: "", role: "" } };
+} */

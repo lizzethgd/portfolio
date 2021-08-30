@@ -5,14 +5,14 @@ export const AuthContext = createContext();
 
 export default ({ children }) => {
  
-    const [user,setUser] = useState({});
+    const [user,setUser] = useState({ username: "", role: "" });
     const [isAuthenticated,setIsAuthenticated] = useState(false);
     const [isLoaded,setIsLoaded] = useState(false);
 
    useEffect(()=>{
     AuthService.getAuthentication().then(data =>{
-            setUser(data.user);
-           setIsAuthenticated(data.isAuthenticated);
+            setUser(data.user ? data.user : { username: "", role: "" });
+            setIsAuthenticated(data.isAuthenticated ? data.isAuthenticated  : false)
             setIsLoaded(true);
         });
     },[]);
@@ -29,6 +29,7 @@ export default ({ children }) => {
         </div>
     )
 }
+
 
 /* const [data, setData ] = useState({
     user : {},
