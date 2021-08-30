@@ -1,6 +1,6 @@
 export default {
 logIn : async user => {
-  const res = await fetch('auth/signin', {
+  await fetch('auth/signin', {
     method: 'POST',
     body: JSON.stringify(user),
     headers : {
@@ -8,8 +8,10 @@ logIn : async user => {
   }
 }).then(res => {
   if(res.status !== 401)
-  {console.log('hay un error aqui')
-       res.json().then(data => data);}
+  {console.log('no hay un error aqui')
+    res.json().then(data => console.log(data))
+      }
+     
   else
       return { isAuthenticated : false, user : {username : "",role : ""}};
 })

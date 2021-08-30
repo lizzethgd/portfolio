@@ -18,7 +18,7 @@ exports.signin = async (req, res) => {
       });
 
      //res.setHeader('x-access-token', token) 
-     await res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})     
+    await res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})     
      //res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})
      await res.status(200).json({isAuthenticated : true, user : {username, role}});
      
