@@ -14,8 +14,8 @@ const App = () => {
   
   return (
     <BrowserRouter>
-     <NavAdmin />
       <Route exact path="/" component={Home} />  
+      <NavAdmin />
       <UnPrivateRoute  path="/login" component={Login} />  
       <PrivateRoute  path="/admin" roles={["guest", "moderator", "admin" ]} component={Admin} />
       <PrivateRoute  path="/testimonialsList" roles={["guest", "moderator", "admin"]} component={TestimonialsList} />

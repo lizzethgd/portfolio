@@ -18,9 +18,9 @@ exports.signin = async (req, res) => {
       });
 
      //res.setHeader('x-access-token', token) 
-      res.cookie('lizzethJWT', token)     
+     await res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})     
      //res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})
-     res.status(200).json({isAuthenticated : true, user : {username, role}});
+     await res.status(200).json({isAuthenticated : true, user : {username, role}});
      
      console.log("LOGIN!!!!!!!!!!");
   
@@ -33,8 +33,8 @@ exports.signin = async (req, res) => {
 exports.signout = async (req, res) => {
   //console.log(req.headers["x-access-token"])
     //req.headers["x-access-token"] = '';  
-    res.clearCookie('lizzethJWT');
-    res.json({user:{username : "", role : ""},success : true})
+    await res.clearCookie('lizzethJWT');
+    await res.json({user:{username : "", role : ""},success : true})
     console.log("LOGOUT!!!!!!!!!!");
 }
 
@@ -54,11 +54,11 @@ exports.signup = async (req,res) => {
         expiresIn: _.JWT_EXPIRES, // 24 hours
       });
       console.log(newUser)
-      return res.status(200).json({ token });
+      return res.status(201).json({ token });
      
       
     }catch (err) {
-    console.log(err.name)
+    console.log(err.name+': '+err.message )
     let errorHandled = err
     err.name==='MongoError' ? errorHandled = DBError(err) : errorHandled
     res.status(401).json(errorHandled.message)

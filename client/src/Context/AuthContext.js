@@ -1,5 +1,5 @@
 import {createContext, useState, useEffect} from 'react';
-import {getAuthentication} from '../services/AuthService';
+import AuthService from '../services/AuthService';
 
 export const AuthContext = createContext();
 
@@ -10,7 +10,7 @@ export default ({ children }) => {
     const [isLoaded,setIsLoaded] = useState(false);
 
    useEffect(()=>{
-        getAuthentication().then(data =>{
+    AuthService.getAuthentication().then(data =>{
             setUser(data.user);
            setIsAuthenticated(data.isAuthenticated);
             setIsLoaded(true);

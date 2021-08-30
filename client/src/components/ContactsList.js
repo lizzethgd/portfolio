@@ -1,12 +1,7 @@
-import NavAdmin from "./NavAdmin"
-import {useState, useEffect} from 'react';
-import {authenticated} from '../services/AuthService';
-
 const ContactsList = () => {
     
     return (
         <>
-        <NavAdmin/>
        <div className="w3-container w3-text-white"  style={{padding:"64px"}}>ContatcsList</div>
         </>
     )

@@ -48,7 +48,7 @@ exports.verifyUser = async (req, res, next) => {
     if (!matchPassword)
       return res.status(401).json({
         token: null,
-        message: "Invalid Password",
+        message: "Invalid Password"
       });
       
         next();
@@ -63,7 +63,7 @@ exports.getAuthenticated = async (req,res)=>{
   try {  
     
     const user = await User.findById(req.userId);
-    console.log(user)
+    console.log('authenticated user: '+user)
     const {username, role} = user  
   await res.status(200).json({isAuthenticated : true, user : {username,role}});
   

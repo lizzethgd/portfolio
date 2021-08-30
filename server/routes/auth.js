@@ -9,12 +9,14 @@ router.use((req, res, next) =>
   next();
 });  
 
-router.post('/signin', middelware1.verifyUser, authController.signin )
-
-router.get('/signout', authController.signout)
-
 router.post('/signup', authController.signup)
 
-router.get('/authenticated', [middelware1.verifyToken, middelware1.getAuthenticated] )
+router.post('/signin', middelware1.verifyUser, authController.signin )
+
+router.get('/signout',  middelware1.verifyToken, authController.signout)
+
+router.get('/authenticated', middelware1.verifyToken, middelware1.getAuthenticated )
+
+router.get('/admin', middelware1.verifyToken, middelware1.getAuthenticated);
 
 module.exports= router

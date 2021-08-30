@@ -1,6 +1,6 @@
 import {useContext} from 'react'
 import {useHistory, NavLink } from "react-router-dom";
-import {logOut} from '../services/AuthService'
+import AuthService from '../services/AuthService'
 import {AuthContext} from '../Context/AuthContext';
 
 const NavAdmin = props => {
@@ -10,7 +10,7 @@ const NavAdmin = props => {
   const history = useHistory()  
   
   const onClickLogoutHandler = async ()=>{
-   await logOut().then(data=>{
+   await AuthService.logOut().then(data=>{
       console.log(data)
         if(data.success){
             setUser(data.user);

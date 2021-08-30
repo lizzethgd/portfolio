@@ -1,9 +1,9 @@
 import {useState, useContext} from 'react'
-import {logIn} from '../services/AuthService'
+import AuthService from '../services/AuthService';
+import {AuthContext} from '../Context/AuthContext';
 import { CgClose } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 import '../assets/css/login.scss'
-import {AuthContext} from '../Context/AuthContext';
 
 const Login = props => {
 
@@ -17,12 +17,12 @@ const Login = props => {
         setUser({ ...user, [e.target.name]: e.target.value })
       }
 
-    const handleSubmitLogin = async e => {
+    const handleSubmitLogin =  (e) => {
         e.preventDefault();
-        console.log(user)
-        await logIn(user).then(data=>{
+       try{
+        AuthService.logIn(user).then(data=>{
             console.log(data);
-            const { isAuthenticated,user, message} = data;
+            const { isAuthenticated, user, message} = data;
             if(isAuthenticated){
                 authContext.setUser(user);
                 authContext.setIsAuthenticated(isAuthenticated);
@@ -30,7 +30,10 @@ const Login = props => {
             }
             else
                 console.log(message);
+            
         });
+      }catch(err){console.log(err.message)}
+       
       }   
 
     const handleSubmitSignup = e => {
