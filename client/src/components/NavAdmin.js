@@ -1,6 +1,6 @@
 import {useContext} from 'react'
 import {useHistory, NavLink } from "react-router-dom";
-import {logoutUser} from '../services/AuthService'
+import {logOut} from '../services/AuthService'
 import {AuthContext} from '../Context/AuthContext';
 
 const NavAdmin = props => {
@@ -10,7 +10,7 @@ const NavAdmin = props => {
   const history = useHistory()  
   
   const onClickLogoutHandler = async ()=>{
-    const res = await logoutUser().then(data=>{
+   await logOut().then(data=>{
       console.log(data)
         if(data.success){
             setUser(data.user);
@@ -60,7 +60,7 @@ const NavAdmin = props => {
       <NavLink to="/admin" className="w3-bar-item w3-button">Lizzeth<b>GD</b></NavLink>
       <div className="w3-left w3-hide-small">
         <NavLink to="/testimonialsList" className="w3-bar-item w3-button">Testimonials</NavLink>       
-        { (user=== '' || user.role !== "admin")  ? null  : adminNavLinksTop }
+        { (user===undefined || user.role !== "admin")  ? null  : adminNavLinksTop }
       </div>
       <div className="w3-right w3-hide-small">
         <div className="w3-bar-item w3-button" onClick={onClickLogoutHandler}>LogOut</div>
@@ -76,7 +76,7 @@ const NavAdmin = props => {
   <nav className="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style={{display: 'none'}} id="mySidebar">
     <button onClick={closeMenu} className="w3-bar-item w3-button w3-large w3-padding-16">Close ×</button>
     <NavLink to="/testimonialsList" onClick={closeMenu} className="w3-bar-item w3-button">Testimonials</NavLink>
-    { (user=== '' || user.role !== "admin") ?  null : adminNavLinksSideBar }
+    { (user===undefined  || user.role !== "admin") ?  null : adminNavLinksSideBar }
     <button onClick={onClickLogoutHandler} className="w3-bar-item w3-button w3-large w3-padding-16">LogOut</button>
   </nav>
   )

@@ -1,15 +1,14 @@
-import {useState} from 'react'
-import {loginUser} from '../services/AuthService'
+import {useState, useContext} from 'react'
+import {logIn} from '../services/AuthService'
 import { CgClose } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 import '../assets/css/login.scss'
+import {AuthContext} from '../Context/AuthContext';
 
-const Login = () => {
+const Login = props => {
 
-    const [user, setUser] = useState({
-        username: '',
-        password: ''
-      }) 
+    const [user, setUser] = useState({username: '', password: ''}) 
+    const authContext = useContext(AuthContext);
 
     const history = useHistory()  
 
@@ -18,11 +17,20 @@ const Login = () => {
         setUser({ ...user, [e.target.name]: e.target.value })
       }
 
-    const handleSubmitLogin = e => {
+    const handleSubmitLogin = async e => {
         e.preventDefault();
         console.log(user)
-        loginUser(user)
-        history.push("/admin");
+        await logIn(user).then(data=>{
+            console.log(data);
+            const { isAuthenticated,user, message} = data;
+            if(isAuthenticated){
+                authContext.setUser(user);
+                authContext.setIsAuthenticated(isAuthenticated);
+                props.history.push('/admin');
+            }
+            else
+                console.log(message);
+        });
       }   
 
     const handleSubmitSignup = e => {

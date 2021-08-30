@@ -1,6 +1,6 @@
 import NavAdmin from "./NavAdmin"
 
-const Admin = () => {
+const Admin = props => {
 
     return (
        <>

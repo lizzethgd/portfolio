@@ -14,15 +14,13 @@ const App = () => {
   
   return (
     <BrowserRouter>
-      <Route exact path="/" component={Home} />
-      <Route  path="/login" component={Login} />
-    <NavAdmin />
-      <Switch>
-      <UnPrivateRoute  path="/admin" component={Admin} />
-      <UnPrivateRoute  path="/testimonialsList" component={TestimonialsList} />
+     <NavAdmin />
+      <Route exact path="/" component={Home} />  
+      <UnPrivateRoute  path="/login" component={Login} />  
+      <PrivateRoute  path="/admin" roles={["guest", "moderator", "admin" ]} component={Admin} />
+      <PrivateRoute  path="/testimonialsList" roles={["guest", "moderator", "admin"]} component={TestimonialsList} />
       <PrivateRoute path="/contactsList"  roles={["admin"]} component={ContactsList} />
       <PrivateRoute  path="/usersList" roles={["admin"]}  component={UsersList} />
-      </Switch>
     </BrowserRouter>
   )
 }

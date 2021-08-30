@@ -4,39 +4,29 @@ const _= process.env
 const DBError = require('../utils/DBError')
 
 exports.signin = async (req, res) => {
-    const {username, password} = req.body
-    console.log('primero: '+req.body)
-    
-    try {
-        const userFound = await User.findOne({ username})
-        console.log(userFound)
-        
-        if (!userFound) return res.status(400).json({ message: "User Not Found" });
 
-        const matchPassword = await User.comparePassword(password, userFound.password);
-    
-        if (!matchPassword)
-          return res.status(401).json({
-            token: null,
-            message: "Invalid Password",
-          });
+  
+  try {
+    const user = await User.findById(req.userId);
 
-      const token = JWT.sign({ id: userFound._id },_.JWT_SECRET, {
-          expiresIn: 86400 // 24 hours
-        });
+    console.log('el user: '+user)
 
-        //const username=userFound.username, role=userFound.role
+    const {_id, username, role} = user
 
-       //res.setHeader('x-access-token', token) 
-        res.cookie('lizzethJWT', token) 
-        res.json({ token })    
-       //res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})
-       //res.json({message: 'Signin succes', your_token: token, user: userFound })
-       console.log("LOGIN!!!!!!!!!!");
-    
-    } catch (err) {
-        console.log(err);
-    }
+    const token = JWT.sign({ id: _id },_.JWT_SECRET, {
+        expiresIn: _.JWT_EXPIRES // 24 hours
+      });
+
+     //res.setHeader('x-access-token', token) 
+      res.cookie('lizzethJWT', token)     
+     //res.cookie('lizzethJWT', token, {httpOnly: true, sameSite:true})
+     res.status(200).json({isAuthenticated : true, user : {username, role}});
+     
+     console.log("LOGIN!!!!!!!!!!");
+  
+  } catch (err) {
+      console.log('error de login: '+err.message);
+  }
 
 }
 
