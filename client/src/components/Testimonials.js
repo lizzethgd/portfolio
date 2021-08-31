@@ -100,7 +100,7 @@ const Testimonials = () => {
         <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Company (optional)" name="company" onChange={handleChange}/></p>
         <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Website (optional)" name="website" onChange={handleChange}/></p>
         <p><textarea className="w3-input w3-padding-16 w3-border" type="text" placeholder="Testimonial " required name="message" onChange={handleChange}/></p>
-        <p><button className="w3-button w3-red" type="submit" onSubmit={handleSubmit}>SEND</button></p>
+        <p><button className="w3-button w3-red" type="submit" >SEND</button></p>
       </form>
     </div>
   </div>

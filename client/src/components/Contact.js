@@ -78,7 +78,7 @@ const handleSubmit = e => {
           <div className="w3-section">
           <input className="w3-check " type="checkbox" name="contact_me" checked={contact_me} onChange={handleCheckbox}/>
           <label><em> I'd love your feedback!</em></label>
-          <button className="w3-button w3-right w3-teal" type="submit" onClick={handleSubmit}>
+          <button className="w3-button w3-right w3-teal" type="submit" >
             <i className="fa fa-paper-plane"></i> SEND
           </button>
           </div>
