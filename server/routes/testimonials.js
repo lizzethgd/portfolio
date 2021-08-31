@@ -1,17 +1,9 @@
 const {Router} = require("express");
 const router = Router()
-const Testimonial= require('../models/Testimonial');
+const tmlsController = require('../controllers/tmlsController')
 
-router.post('/send', async (req,res,next) => {
-    const {name, occupation, company, website, testimonial} = req.body
+router.post('/', tmlsController.sendTestimonial)
 
-    Testimonial.create(req.body)
-    .then(function(testimonial){
-        res.send(testimonial)
-    }).catch(next)
-    
-
-})
-  
+router.get('/', tmlsController.getTestimonials)
 
 module.exports = router

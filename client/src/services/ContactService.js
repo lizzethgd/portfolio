@@ -9,7 +9,7 @@ export const sendMail = ( nameC, emailC, phoneC, subjectC, messageC, contact_meC
     }
     console.log(mail)
   
-    return fetch('contact_form/send', {
+    return fetch('contact_form/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

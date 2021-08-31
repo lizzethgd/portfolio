@@ -5,7 +5,6 @@ const DBError = require('../utils/DBError')
 
 exports.signin = async (req, res) => {
 
-  
   try {
     const user = await User.findById(req.userId);
 

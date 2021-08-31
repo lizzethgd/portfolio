@@ -1,11 +1,10 @@
-import '../assets/css/testimonials.css'
+import {useState, useEffect} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import { CgClose } from "react-icons/cg";
 import "slick-carousel/slick/slick-theme.css";
-import {useState} from 'react'
-import {sendTestimonial} from '../services/TestimonialService'
-//import '../assets/css/modal.scss'
+import TestimonialService from '../services/TestimonialService'
+import '../assets/css/testimonials.css'
 
 const onButtonClick = () => {
   document.getElementById("testimonial").style.display = "block";
@@ -27,6 +26,7 @@ const settings = {
 };
 
 const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState();
   
   const [testimonial, setTestimonial] = useState({
     name: '',
@@ -44,9 +44,15 @@ const Testimonials = () => {
   
   const handleSubmit = e => {
     e.preventDefault();
-    sendTestimonial(name, occupation, company, website, message)
+    TestimonialService.sendTestimonial(name, occupation, company, website, message)
     onClouseFullSizeImage()
   }
+
+  useEffect(()=>{
+    TestimonialService.getTestimonials().then(data =>{
+       setTestimonials(data)
+        });
+    },[]);
 
   return (
   <section id="testimonials" >
