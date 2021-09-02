@@ -53,7 +53,7 @@ exports.signup = async (req,res) => {
         expiresIn: _.JWT_EXPIRES, // 24 hours
       });
       console.log(newUser)
-      return res.status(201).json({ token });
+      return res.status(200).json({ token });
      
       
     }catch (err) {

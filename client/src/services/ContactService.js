@@ -1,11 +1,11 @@
-export const sendMail = ( nameC, emailC, phoneC, subjectC, messageC, contact_meC) => {
+export const sendMail = ( nameS, emailS, phoneS, subjectS, messageS, contact_meS) => {
     const mail = {
-            name: nameC,
-            email: emailC,
-            phone: parseInt(phoneC),
-            subject : subjectC,
-            message: messageC,
-            contact_me: contact_meC
+            name: nameS,
+            email: emailS,
+            phone: parseInt(phoneS),
+            subject : subjectS,
+            message: messageS,
+            contact_me: contact_meS
     }
     console.log(mail)
   

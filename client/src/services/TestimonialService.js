@@ -1,12 +1,12 @@
 export default {
 
-  sendTestimonial : async ( nameT, occupationT, companyT, websiteT, testimonialT) => {
+  sendTestimonial : async ( nameS, occupationS, companyS, websiteS, testimonialS) => {
       const testimonial = {
-              name: nameT,
-              occupation: occupationT,
-              company: companyT,
-              website : websiteT,
-              testimonial: testimonialT
+              name: nameS,
+              occupation: occupationS,
+              company: companyS,
+              website : websiteS,
+              testimonial: testimonialS
       }
       console.log(testimonial)
 
