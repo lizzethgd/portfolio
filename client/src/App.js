@@ -31,7 +31,7 @@ export default App;
       <Route exact path="/" component={Home} />
       <Route  path="/login" component={Login} />
       <Route  path="/admin" component={Admin} />
-      <Route  path="/testimonialsList" component={TestimonialsList} />
+ ..     <Route  path="/testimonialsList" component={TestimonialsList} />
       <Route path="/contactsList"  component={ContactsList} />
       <Route  path="/usersList"  component={UsersList} />
     </BrowserRouter> 

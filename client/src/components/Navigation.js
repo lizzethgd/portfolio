@@ -3,16 +3,20 @@ import '../assets/css/navigation.css'
 import {IoHomeSharp} from "react-icons/io5"
 import {IoMdChatbubbles } from "react-icons/io"
 import {BsPersonBoundingBox, BsGrid3X3GapFill} from "react-icons/bs"
-import {FaEnvelope} from "react-icons/fa"
-import {  GiFootprint } from "react-icons/gi";
-
+import {FaEnvelope, FaGlobe } from "react-icons/fa"
+import { useTranslation} from 'react-i18next';
+import 'flag-icon-css/css/flag-icon.min.css'
+import languagesList from '../assets/utils/languages'
 
 const isCurrent = (anchor, pathname) => (
   pathname.endsWith(anchor)
   ? 'current'
   : ''
 )
+
 const Navigation = () => {
+
+  const { t, i18n } = useTranslation("global");
 
   const [pathname, setPathname] = useState('#home');
 
@@ -22,39 +26,52 @@ const Navigation = () => {
     })
   })
 
+  const langChange = e => {
+
+    const lang = e.target.value
+    i18n.changeLanguage(lang)
+  
+   }
+
     return (
     <nav id="nav-wrap">
       <a className="mobile-btn" href="#nav-wrap" />
       <ul id="nav" className="nav">
         <li className={isCurrent('#home', pathname)}>
-          <a className="smoothscroll" href="#home">
-            <IoHomeSharp/> Home
+          <a href="#home">
+            <IoHomeSharp/> {t("nav.home")}
           </a>
         </li>
         <li className={isCurrent('#about', pathname)}>
-          <a className="smoothscroll" href="#about">
-          <BsPersonBoundingBox/> About
+          <a href="#about">
+          <BsPersonBoundingBox/> {t("nav.about")}
           </a>
         </li>
         <li className={isCurrent('#resume', pathname)}>
-          <a className="smoothscroll" href="#contact">
-          <FaEnvelope/> Contact
+          <a href="#contact">
+          <FaEnvelope/> {t("nav.contact")}
           </a>
         </li>
         <li className={isCurrent('#portfolio', pathname)}>
-          <a className="smoothscroll" href="#portfolio">
-          <BsGrid3X3GapFill/> Portfolio
+          <a href="#portfolio">
+          <BsGrid3X3GapFill/> {t("nav.portfolio")}
           </a>
         </li>
         <li className={isCurrent('#testimonials', pathname)}>
-          <a className="smoothscroll" href="#testimonials">
-          <IoMdChatbubbles/> Testimonials
+          <a href="#testimonials">
+          <IoMdChatbubbles/> {t("nav.testimonials")}
           </a>
         </li>
-        <li className={isCurrent('#footer', pathname)}>
-          <a className="smoothscroll" href="#footer">
-          <GiFootprint/> Footer
-          </a>
+        <li >
+          <p >    
+          &#127760;
+          <select onChange={langChange}>
+            <option value="en" >🇬🇧 English</option>
+            <option value="fi" >🇫🇮 Suomi</option>
+            <option value="es" >🇪🇸 Espanol</option>
+            <option value="de" >🇩🇪 Deutscht</option>
+          </select>   
+          </p>
         </li>
       </ul>
     </nav>

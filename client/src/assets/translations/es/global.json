@@ -1,0 +1,29 @@
+{
+    "nav":{
+        "home": "inicio",
+        "about": "Sobre mi",
+        "contact":"contacto",
+        "portfolio":"portafolio",
+        "testimonials": "testimonios"
+    },
+    "header":{
+        "who": "Soy Lizzeth Garcia",
+        "description": "Soy un amante de la programación que vive en Helsinki y le gusta experimentar con todo tipo de código, con experiencia especialmente en ",
+        "web": "programación web",
+        "both": " tanto ",
+        "and": " como ",
+        "say": ", se puede decir que soy ", 
+        "but": " pero por supuesto que no soy ",
+        "scroll": "Continua leyendo",
+        "learn": " y conoce más ",
+        "about":"sobre mi"
+    },
+    "about":{
+        "me":"Sobre mi",
+        "description": "Me gradué de Datanomi en el verano de 2017. Estuve de baja por maternidad durante algunos años, pero todavía he hecho algunos proyectos para seguir con lo que he aprendido y aprender más. Como empleado, soy eficiente y estoy acostumbrado a trabajar bajo presión. Mi objetivo es trabajar en temas interesantes y desafiantes en trabajos que apoyen mi desarrollo profesional. ",
+        "download":"  Descarcar Curriculum"
+    },
+    "testimonial":{
+        "leave": "Deja tu comentario"
+    }
+}

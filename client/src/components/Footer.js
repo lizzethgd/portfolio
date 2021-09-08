@@ -4,13 +4,13 @@ import SocialLinks from "./SocialLinks";
 import { FaChevronCircleUp } from "react-icons/fa";
 
 const Footer = () => (
-  <footer id="footer">
+  <footer >
     <div className="row">
       <div className="twelve columns">
         <SocialLinks />
 
         <ul className="copyright">
-          <li>&copy; Copyright 2021</li>
+          <li>&copy; Copyright {new Date().getFullYear()}</li>
           <li>
             Design by{" "}
             <a title="Styleshout" href="http://www.styleshout.com/"> 

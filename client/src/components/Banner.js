@@ -1,20 +1,29 @@
-import React from "react";
 import SocialLinks from "./SocialLinks";
+import { useTranslation} from 'react-i18next';
 
-const Banner = () => (
+const Banner = () => {
+
+  const { t } = useTranslation("global");
+  
+return(
   <div className="row banner">
     <div className="banner-text">
-      <h1 className="responsive-headline">I'm Lizzeth Garcia</h1>
-      <h3>
-        I'm a latin girl living in Helsinki  who likes to experiment with all kinds of code, with experience especially in <span>web programming</span> both <span>BackEnd</span> and <span>FrontEnd</span>, you can say that I am <span>FullStack</span> but of course I am not Senior.
-        <a className="smoothscroll" href="#about">
+      <h1 className="responsive-headline">{t("header.who")}</h1>
+      <h3>{t("header.description")}
+        <span>{t("header.web")}</span>
+        {t("header.both")}
+        <span>BackEnd</span>
+        {t("header.and")}
+        <span>FrontEnd</span> {t("header.say")}
+        <span>FullStack</span> 
+        {t("header.but")}Senior. <a className="smoothscroll" href="#about">
           {" "}
-          Start scrolling
+          {t("header.scroll")}
         </a>{" "}
-        and learn more
+        {t("header.learn")}
         <a className="smoothscroll" href="#about">
           {" "}
-          about me
+          {t("header.about")}
         </a>
       </h3>
       <hr />
@@ -22,5 +31,5 @@ const Banner = () => (
     </div>
   </div>
 );
-
+}
 export default Banner;

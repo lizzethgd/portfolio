@@ -1,0 +1,29 @@
+{
+    "nav":{
+        "home": "koti",
+        "about": "minusta",
+        "contact":"yhteys",
+        "portfolio":"portfolio",
+        "testimonials": "suositus"
+    },
+    "header":{
+        "who": "Olen Lizzeth Garcia",
+        "description": "Olen ohjelmoinnin rakastaja, joka asuu Helsingissä ja tykkään kokeilla kaikenlaista koodia. Kokemusta erityisesti ",
+        "web": "web -ohjelmoinnista ",
+        "both": " both ",
+        "and": " and ",
+        "say": ", voi sanoa, että olen ", 
+        "but": " , mutta tietysti en ole  ",
+        "scroll": " Aloita vieritys",
+        "learn": " ja lue lisää ",
+        "about":"minusta"
+    },
+    "about":{
+        "me":"Minusta",
+        "description": "Valmistuin Datanomi kesäkussa 2017. Olin äitiystauko muutama vuosia mutta olen kuitenkin tehnyt joitain projekteja itse harjoittaakseni oppimaani ja oppiakseni lisää. Työntekijänä olen tehokas ja tottunut työskentelemään paineen alla. Tavoitteenani on työskennellä mielenkiintoisten ja haastavien ongelmien parissa työtehtävissä jotka tukevat ammatillista kehittymistäni",
+        "download":"  Lataa Ansioluettelo "
+    },
+    "testimonial":{
+        "leave": "Jätä suosittelusi"
+    }
+}

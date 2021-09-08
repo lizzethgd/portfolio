@@ -5,6 +5,7 @@ import { CgClose } from "react-icons/cg";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialService from '../services/TestimonialService'
 import '../assets/css/testimonials.css'
+import { useTranslation} from 'react-i18next';
 
 const onButtonClick = () => {
   document.getElementById("testimonial").style.display = "block";
@@ -55,13 +56,13 @@ const Testimonials = () => {
     onClouseFullSizeImage()
   }
 
-    console.log(testimonials)
+  const { t } = useTranslation("global");
 
 
   return (
   <section id="testimonials" >
   <div className="text-container" >
-    <h1>Testimonials</h1>
+    <h1>{t("nav.testimonials")}</h1>
         <ul>
           <Slider {...settings}>
           {testimonials.map((testimonial) => (
@@ -75,17 +76,17 @@ const Testimonials = () => {
           ))}  
           </Slider> 
         </ul>
-      <button className='w3-button w3-padding-small w3-medium w3-black w3-opacity w3-hover-opacity-off' style={{float: 'right'}} onClick={onButtonClick}>Leave your testimonial</button >
+      <button className='w3-button w3-padding-small w3-medium w3-black w3-opacity w3-hover-opacity-off' style={{float: 'right'}} onClick={onButtonClick}>{t("testimonial.leave")}</button >
      </div>
      
 <div id="testimonial" className="w3-modal  w3-gray">
 <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
   <div className="w3-modal-content w3-animate-zoom">
     <div className="w3-container w3-black">
-      <h1>Testimonial</h1>
+      <h1>{t("nav.testimonials")}</h1>
     </div>
     <div className="w3-container">
-      <p>Leave your testimonial:</p>
+      <p>{t("testimonial.leave")}:</p>
       <form onSubmit={handleSubmit} target="_self">
         <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="name" value={name} onChange={handleChange}/></p>
         <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Occupation" required name="occupation" value={occupation} onChange={handleChange}/></p>
