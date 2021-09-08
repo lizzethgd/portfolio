@@ -22,7 +22,7 @@ i18n
     debug: true,
     fallbackLng: 'en',
     detection: {
-      order: ['htmlTag',  'localStorage', 'cookie', 'next navigator', 'path', 'subdomain'],
+      order: ['cookie',  'localStorage', 'htmlTag', 'next navigator', 'path', 'subdomain'],
       caches: ['localStorage', 'cookie'],
     },
     interpolation: {

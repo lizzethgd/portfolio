@@ -8,9 +8,9 @@ import i18n from './i18n';
 
 ReactDOM.render(
 <AuthProvider>
-<I18nextProvider i18n={i18n}>
+  <I18nextProvider i18n={i18n}>
     <App />
-    </I18nextProvider>
+  </I18nextProvider>
 </AuthProvider>,
   document.getElementById('root')
 );

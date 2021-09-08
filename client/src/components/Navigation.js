@@ -5,8 +5,6 @@ import {IoMdChatbubbles } from "react-icons/io"
 import {BsPersonBoundingBox, BsGrid3X3GapFill} from "react-icons/bs"
 import {FaEnvelope, FaGlobe } from "react-icons/fa"
 import { useTranslation} from 'react-i18next';
-import 'flag-icon-css/css/flag-icon.min.css'
-import languagesList from '../assets/utils/languages'
 
 const isCurrent = (anchor, pathname) => (
   pathname.endsWith(anchor)
@@ -20,10 +18,13 @@ const Navigation = () => {
 
   const [pathname, setPathname] = useState('#home');
 
+  const [currentLang, setCurrentLang] = useState()
+
   useEffect(() => {
     window.addEventListener('hashchange', () => {
       setPathname(window.location.href);
     })
+    setCurrentLang(i18n.language)
   })
 
   const langChange = e => {
@@ -65,7 +66,7 @@ const Navigation = () => {
         <li >
           <p >    
           &#127760;
-          <select onChange={langChange}>
+          <select value={currentLang} onChange={langChange}>
             <option value="en" >🇬🇧 English</option>
             <option value="fi" >🇫🇮 Suomi</option>
             <option value="es" >🇪🇸 Espanol</option>
