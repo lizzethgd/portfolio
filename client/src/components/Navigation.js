@@ -7,9 +7,7 @@ import {FaEnvelope } from "react-icons/fa"
 import { useTranslation} from 'react-i18next';
 
 const isCurrent = (anchor, pathname) => (
-  pathname.endsWith(anchor)
-  ? 'current'
-  : ''
+  pathname.endsWith(anchor) ? 'current' : ''
 )
 
 const Navigation = () => {
@@ -19,6 +17,7 @@ const Navigation = () => {
   const [pathname, setPathname] = useState('#home');
 
   const [currentLang, setCurrentLang] = useState()
+
 
   useEffect(() => {
     window.addEventListener('hashchange', () => {
@@ -37,7 +36,7 @@ const Navigation = () => {
     return (
     <nav id="nav-wrap">
       <a  href="#nav-wrap" className="ham-btn" />
-      <a  href="#" className="x-btn" />
+      <a  href="#x" className="x-btn" />
       <ul id="nav" className="nav">
         <li className={isCurrent('#home', pathname)}>
           <a href="#home">
