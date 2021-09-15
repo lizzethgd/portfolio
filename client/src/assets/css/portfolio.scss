@@ -20,7 +20,7 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
   margin: 50px auto;
-  max-width: 75vw;
+  max-width: 75rem;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
   max-width: 300px;
   perspective: 1000;
   position: relative;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 0;
@@ -227,6 +227,9 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     filter: blur(3px);
 }
 
-
-
+@media only screen and (max-width: 480px) {
+  #cards__container {
+    margin: 10px auto;
+  }
+}
 

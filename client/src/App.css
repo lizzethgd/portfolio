@@ -8,19 +8,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/src/assets/images/header-background.jpg');
+  background-image: url('/src/assets/images/parallax4.jpg');
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/src/assets/images/testimonials-bg.jpg");
-  min-height: 400px;
+  background-image: url("/src/assets/images/parallax2.jpg");
+   /*min-height: 400px;*/
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/src/assets/images/testimonials-bg0.jpg");
-  min-height: 400px;
+  background-image: url("/src/assets/images/parallax3.jpg");
+  /*min-height: 400px;*/
 }
 
 .w3-wide {letter-spacing: 10px;}

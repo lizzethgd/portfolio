@@ -1,11 +1,10 @@
 #testimonials {
-    background: #1f1f1f url('../images/testimonials-bg.jpg') no-repeat center center;
+    background: #1f1f1f url('../images/parallax1.jpg') no-repeat bottom center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     background-attachment: fixed;
-  
     position: relative;
-    min-height: 200px;
+    min-height: 400px;
     width: 100%;
     overflow: hidden;
   }

@@ -54,7 +54,7 @@ const Portfolio = () => {
 
     const Parallax = {
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     }
@@ -74,8 +74,7 @@ const Portfolio = () => {
       
       const cards = content.map(card => (
               
-        <div className="card__" key={card.id} onClick={() => onCardClick(card.id)} 
-        >
+        <div className="card__" key={card.id} onClick={() => onCardClick(card.id)} >
           <div className="card__image-holder">
           <img className="card__image" src={card.img} alt={card.title} />
           </div>
@@ -93,11 +92,13 @@ const Portfolio = () => {
     <div className="w3-display-middle">
         <span className="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
     </div>
-    </div>
+</div>
 
 {/* <!-- Container (Portfolio Section) --> */}
-<div id="cards__container">
+<div id="w3-content w3-container w3-padding-16">
+  <div id="cards__container">
     {cards}
+    </div>  
 </div> 
 
 {/* <!-- Modal for full size images on click--> */}

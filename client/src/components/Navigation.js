@@ -1,9 +1,9 @@
 import { useEffect, useState} from 'react';
-import '../assets/css/navigation.css'
+import '../assets/css/navigation.scss'
 import {IoHomeSharp} from "react-icons/io5"
 import {IoMdChatbubbles } from "react-icons/io"
 import {BsPersonBoundingBox, BsGrid3X3GapFill} from "react-icons/bs"
-import {FaEnvelope, FaGlobe } from "react-icons/fa"
+import {FaEnvelope } from "react-icons/fa"
 import { useTranslation} from 'react-i18next';
 
 const isCurrent = (anchor, pathname) => (
@@ -36,7 +36,8 @@ const Navigation = () => {
 
     return (
     <nav id="nav-wrap">
-      <a className="mobile-btn" href="#nav-wrap" />
+      <a  href="#nav-wrap" className="ham-btn" />
+      <a  href="#" className="x-btn" />
       <ul id="nav" className="nav">
         <li className={isCurrent('#home', pathname)}>
           <a href="#home">
@@ -48,7 +49,7 @@ const Navigation = () => {
           <BsPersonBoundingBox/> {t("nav.about")}
           </a>
         </li>
-        <li className={isCurrent('#resume', pathname)}>
+        <li className={isCurrent('#contact', pathname)}>
           <a href="#contact">
           <FaEnvelope/> {t("nav.contact")}
           </a>
@@ -64,15 +65,15 @@ const Navigation = () => {
           </a>
         </li>
         <li >
-          <p >    
-          &#127760;
+         <p >    
+          <i className="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>
           <select value={currentLang} onChange={langChange}>
             <option value="en" >🇬🇧 English</option>
             <option value="fi" >🇫🇮 Suomi</option>
             <option value="es" >🇪🇸 Espanol</option>
             <option value="de" >🇩🇪 Deutscht</option>
           </select>   
-          </p>
+         </p>
         </li>
       </ul>
     </nav>

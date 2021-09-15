@@ -6,7 +6,7 @@ const Banner = () => {
   const { t } = useTranslation("global");
   
 return(
-  <div className="row banner">
+  <div className="banner">
     <div className="banner-text">
       <h1 className="responsive-headline">{t("header.who")}</h1>
       <h3>{t("header.description")}

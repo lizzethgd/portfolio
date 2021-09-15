@@ -58,7 +58,6 @@ const Testimonials = () => {
 
   const { t } = useTranslation("global");
 
-
   return (
   <section id="testimonials" >
   <div className="text-container" >
