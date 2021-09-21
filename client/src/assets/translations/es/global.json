@@ -21,7 +21,15 @@
     "about":{
         "me":"Sobre mi",
         "description": "Me gradué de Datanomi en el verano de 2017. Estuve de baja por maternidad durante algunos años, pero todavía he hecho algunos proyectos para seguir con lo que he aprendido y aprender más. Como empleado, soy eficiente y estoy acostumbrado a trabajar bajo presión. Mi objetivo es trabajar en temas interesantes y desafiantes en trabajos que apoyen mi desarrollo profesional. ",
-        "download":"  Descarcar Curriculum"
+        "download":"  Descargar Curriculum",
+        "skills" : "Conocimientos",
+        "langs": {
+            "tittle": "Idiomas", 
+            "fi": "Finés", 
+            "en": "Inglés", 
+            "ge": "Aleman", 
+            "sp": "Español"
+        }
     },
     "testimonial":{
         "leave": "Deja tu comentario"

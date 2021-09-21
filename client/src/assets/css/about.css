@@ -52,6 +52,11 @@
     font-size: 20px;
   }
 
+  #about .progress{
+    transition: 1s ease;
+    transition-delay: 2s;
+  }
+
   @media only screen and (max-width: 900px) {
     
     #about .profile-pic {

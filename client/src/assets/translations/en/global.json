@@ -21,7 +21,15 @@
     "about":{
         "me":"About Me",
         "description": "I graduated from Datanomi in the summer of 2017. I was on maternity leave for a few years but I have still done some projects myself to pursue what I have learned and to learn more. As an employee, I am efficient and used to working under pressure. My goal is to work on interesting and challenging issues in jobs that support my professional development ", 
-        "download":"  Download Resume"
+        "download":"  Download Resume",
+        "skills" : "Skills",
+        "langs": {
+            "tittle": "Languages", 
+            "fi": "Finnish", 
+            "en": "English", 
+            "ge": "German", 
+            "sp":"Spanish"
+        }
     },
     "testimonial":{
         "leave": "Leave your testimonial"

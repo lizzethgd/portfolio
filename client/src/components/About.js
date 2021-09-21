@@ -1,7 +1,9 @@
 import '../assets/css/general.css'
 import '../assets/css/about.css'
+//import {useEffect, useState, useRef} from 'react'
 import { FaCloudDownloadAlt, FaTools, FaGlobe } from "react-icons/fa";
-
+import ProgressBar from './ProgressBar'
+import '../assets/css/progressBar.css'
 import profilePic from "../assets/images/profilepic.jpg";
 import { useTranslation} from 'react-i18next';
 
@@ -26,42 +28,21 @@ return(
             </p>
       </div>
   </div>
-  <div className="w3-content w3-container w3-padding-32 " >
-        <p className="w3-large w3-text-teal"><FaTools/><b className="w3-margin-left">Skills</b></p><br/>
-          <p>Adobe Photoshop</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{width:'90%'}}>90%</div>
-          </div>
-          <p>Photography</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{width:'80%'}}>
-              <div className="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{width:'75%'}}>75%</div>
-          </div>
-          <p>Media</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{width:'50%'}}>50%</div>
-          </div>
-          <br/>  <br/>  
+  <div className="w3-content w3-container w3-padding-32" >
+        <p className="w3-large w3-text-teal"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></p><br/><br/>
+          <ProgressBar  start={20} stop={80} name='REACT' />
+          <ProgressBar  start={20} stop={80} name='NODE' />
+          <ProgressBar  start={20} stop={60} name='CSS' />
+          <ProgressBar  start={20} stop={70} name='HTML' />
+          
 
-        <p className="w3-large w3-text-teal"><FaGlobe/><b className="w3-margin-left">Languages</b></p>
-          <br/>
-          <p>English</p>
-          <div className="w3-light-grey w3-round-xlarge">
-            <div className="w3-round-xlarge w3-teal" style={{height:'24px', width:'100%'}}></div>
-          </div>
-          <p>Spanish</p>
-          <div className="w3-light-grey w3-round-xlarge">
-            <div className="w3-round-xlarge w3-teal" style={{height:'24px', width:'55%'}}></div>
-          </div>
-          <p>German</p>
-          <div className="w3-light-grey w3-round-xlarge">
-            <div className="w3-round-xlarge w3-teal" style={{height: '24px', width:'25%'}}></div>
-          </div>
+        <p className="w3-large w3-text-teal"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></p><br/><br/>
+          
+        <ProgressBar  start={20} stop={70} name={t("about.langs.fi")} />
+        <ProgressBar  start={20} stop={60} name={t("about.langs.en")} />
+        <ProgressBar  start={20} stop={30} name={t("about.langs.ge")} />
+        <ProgressBar  start={20} stop={100} name={t("about.langs.sp")} />
+
   </div>
 </section>
 )

@@ -21,7 +21,15 @@
     "about":{
         "me":"Minusta",
         "description": "Valmistuin Datanomi kesäkussa 2017. Olin äitiystauko muutama vuosia mutta olen kuitenkin tehnyt joitain projekteja itse harjoittaakseni oppimaani ja oppiakseni lisää. Työntekijänä olen tehokas ja tottunut työskentelemään paineen alla. Tavoitteenani on työskennellä mielenkiintoisten ja haastavien ongelmien parissa työtehtävissä jotka tukevat ammatillista kehittymistäni",
-        "download":"  Lataa Ansioluettelo "
+        "download":"  Lataa Ansioluettelo",
+        "skills" : "Taidot",
+        "langs": {
+            "tittle": "Kielet", 
+            "fi": "Suomi", 
+            "en": "Englanti", 
+            "ge": "Saksa", 
+            "sp": "Espanja"
+        }
     },
     "testimonial":{
         "leave": "Jätä suosittelusi"

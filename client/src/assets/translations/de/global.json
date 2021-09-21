@@ -21,7 +21,14 @@
     "about":{
         "me":"Über mich",
         "description": "Ich habe Datanomi im Sommer 2017 abgeschlossen. Ich war einige Jahre im Mutterschaftsurlaub, habe aber selbst noch einige Projekte durchgeführt, um das Gelernte fortzusetzen und mehr zu lernen. Als Mitarbeiter bin ich effizient und gewohnt, unter Druck zu arbeiten. Mein Ziel ist es, an interessanten und herausfordernden Themen in Jobs zu arbeiten, die meine berufliche Entwicklung unterstützen. ",
-        "download":"  Lebenslauf herunterladen"
+        "download":"  Lebenslauf herunterladen",
+        "skills" : "Fähigkeiten",
+        "langs": {
+            "tittle": "Sprachen", 
+            "fi": "Finnisch", 
+            "en": "Englisch", 
+            "ge": "Deutsch", 
+            "sp":"Spanisch"}
     },
     "testimonial":{
         "leave": "Geben sie ihren eindruck "
