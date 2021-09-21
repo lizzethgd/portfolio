@@ -27,13 +27,12 @@ const ProgressBar = ({start, stop, name}) => {
 
 return(
 <>
-    <div className="w3-light-grey w3-round-xlarge w3-bold ">
-        <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{width: width+'%'}}><div className="w3-left w3-teal" >{name}</div><div className="w3-right w3-teal">{width}%</div></div>
+    <div className="w3-light-grey w3-round-xlarge w3-bold">
+        <div className="w3-container w3-center w3-round-xlarge w3-teal w3-text-black" style={{width: width+'%'}}><div className="w3-left " >{name}</div><div className="w3-right ">{width}%</div></div>
     </div>
     <br/>
 </>
 )
 }
-
 export default ProgressBar
 

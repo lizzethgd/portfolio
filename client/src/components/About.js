@@ -29,14 +29,14 @@ return(
       </div>
   </div>
   <div className="w3-content w3-container w3-padding-32" >
-        <p className="w3-large w3-text-teal"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></p><br/><br/>
+        <p className="w3-large w3-text-deep-orange"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></p><br/><br/>
           <ProgressBar  start={20} stop={80} name='REACT' />
           <ProgressBar  start={20} stop={80} name='NODE' />
           <ProgressBar  start={20} stop={60} name='CSS' />
           <ProgressBar  start={20} stop={70} name='HTML' />
           
 
-        <p className="w3-large w3-text-teal"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></p><br/><br/>
+        <p className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></p><br/><br/>
           
         <ProgressBar  start={20} stop={70} name={t("about.langs.fi")} />
         <ProgressBar  start={20} stop={60} name={t("about.langs.en")} />
