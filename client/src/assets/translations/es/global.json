@@ -1,10 +1,11 @@
 {
     "nav":{
-        "home": "inicio",
-        "about": "Sobre mi",
-        "contact":"contacto",
-        "portfolio":"portafolio",
-        "testimonials": "testimonios"
+        "home": "INICIO",
+        "about": "SOBRE MI",
+        "contact":"CONTACTO",
+        "resume": "CURRICULUM",
+        "portfolio":"PORTAFOLIO",
+        "testimonials": "RECOMENDACIONES"
     },
     "header":{
         "who": "Soy Lizzeth Garcia",
@@ -19,7 +20,6 @@
         "about":"sobre mi"
     },
     "about":{
-        "me":"Sobre mi",
         "description": "Me gradué de Datanomi en el verano de 2017. Estuve de baja por maternidad durante algunos años, pero todavía he hecho algunos proyectos para seguir con lo que he aprendido y aprender más. Como empleado, soy eficiente y estoy acostumbrado a trabajar bajo presión. Mi objetivo es trabajar en temas interesantes y desafiantes en trabajos que apoyen mi desarrollo profesional. ",
         "download":"  Descargar Curriculum",
         "skills" : "Conocimientos",
@@ -31,7 +31,33 @@
             "sp": "Español"
         }
     },
+    "resume":{
+        "education" : "Formación",
+        "experience" : "Experiencia de Trabajo"
+    },
+    "contact":{
+        "fi": "Finlandia",
+        "form":{
+            "name":"Nombre",
+            "email": "Correo electrónico",
+            "subject": "Título",
+            "phone": "Telefono (opcional)",
+            "message": "Mensaje"
+        },
+        "response": " Me encantaría recibir respuesta!"
+    },
     "testimonial":{
-        "leave": "Deja tu comentario"
+        "leave": "Deje su recomendación",
+        "form":{
+            "name":"Nombre",
+            "occupation": "Ocupación",
+            "company": "Compañia (opcional)",
+            "website": "Sitio web (opcional)",
+            "testimonial": "Texto de recomendación"
+        }
+    },
+    "send": " ENVIAR",
+    "footer":{
+        "dev": "Desarrollado en React y Node ⚛️ por"
     }
 }

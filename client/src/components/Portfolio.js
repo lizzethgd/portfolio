@@ -1,9 +1,13 @@
 import '../assets/css/portfolio.scss'
 import '../assets/css/modal.scss'
+import { useTranslation} from 'react-i18next';
 import { CgClose } from "react-icons/cg";
 import { FaTags } from "react-icons/fa";
 
 const Portfolio = () => {
+
+  const { t } = useTranslation("global");
+  
     const content= [
         { id: 0, 
           img: 'https://source.unsplash.com/450x336/?wave',
@@ -90,7 +94,7 @@ const Portfolio = () => {
 {/* <!-- Second Parallax Image with Portfolio Text --> */}
 <div className="bgimg-2 w3-display-container " style={Parallax}>
     <div className="w3-display-middle">
-        <span className="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        <span className="w3-xxlarge w3-text-white w3-wide">{t("nav.portfolio")}</span>
     </div>
 </div>
 

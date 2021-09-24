@@ -17,7 +17,7 @@ return(
         <img className="profile-pic" src={profilePic} alt="" />
     </div>
     <div className="nine columns main-col">
-        <h2>{t("about.me")}</h2>
+        <h2>{t("nav.about")}</h2>
         <p>{t("about.description")}</p>
       </div>
       <div className="columns download">
@@ -29,14 +29,14 @@ return(
       </div>
   </div>
   <div className="w3-content w3-container w3-padding-32" >
-        <p className="w3-large w3-text-deep-orange"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></p><br/><br/>
+        <div className="w3-large w3-text-deep-orange"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></div><br/>
           <ProgressBar  start={20} stop={80} name='REACT' />
           <ProgressBar  start={20} stop={80} name='NODE' />
           <ProgressBar  start={20} stop={60} name='CSS' />
           <ProgressBar  start={20} stop={70} name='HTML' />
           
 
-        <p className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></p><br/><br/>
+        <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></div><br/>
           
         <ProgressBar  start={20} stop={70} name={t("about.langs.fi")} />
         <ProgressBar  start={20} stop={60} name={t("about.langs.en")} />

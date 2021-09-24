@@ -1,10 +1,11 @@
 {
     "nav":{
-        "home": "koti",
-        "about": "minusta",
-        "contact":"yhteys",
-        "portfolio":"portfolio",
-        "testimonials": "suositus"
+        "home": "KOTI",
+        "about": "MINUSTA",
+        "contact":"YHTEYS",
+        "resume": "ANSIOLUETTELO",
+        "portfolio":"PORTFOLIO",
+        "testimonials": "SUOSITUKSIA"
     },
     "header":{
         "who": "Olen Lizzeth Garcia",
@@ -19,7 +20,6 @@
         "about":"minusta"
     },
     "about":{
-        "me":"Minusta",
         "description": "Valmistuin Datanomi kesäkussa 2017. Olin äitiystauko muutama vuosia mutta olen kuitenkin tehnyt joitain projekteja itse harjoittaakseni oppimaani ja oppiakseni lisää. Työntekijänä olen tehokas ja tottunut työskentelemään paineen alla. Tavoitteenani on työskennellä mielenkiintoisten ja haastavien ongelmien parissa työtehtävissä jotka tukevat ammatillista kehittymistäni",
         "download":"  Lataa Ansioluettelo",
         "skills" : "Taidot",
@@ -31,7 +31,33 @@
             "sp": "Espanja"
         }
     },
+    "resume":{
+        "education" : "Koulutus",
+        "experience" : "Työkokemus"
+    },
+    "contact":{
+        "fi": "Suomi",
+        "form":{
+            "name":"Nimi",
+            "email": "Sähköposti osoite",
+            "subject": "Aihe",
+            "phone": "Puhelin (valinnainen) ",
+            "message": "Viesti"
+        },
+        "response": " Haluaisin vastauksesi!"
+    },
     "testimonial":{
-        "leave": "Jätä suosittelusi"
+        "leave": "Jätä suosituksen",
+        "form":{
+            "name":"Nimi",
+            "occupation": "Ammatti",
+            "company": "Yritys (valinnainen)",
+            "website": "Nettisivu (valinnainenl)",
+            "testimonial": "Suosituksen teksti"
+        }    
+    },
+    "send": " LÄHETTÄÄ",
+    "footer":{
+        "dev": "Kehitetty Reactissa ja Nodessa ⚛️ kehittäjä "
     }
 }

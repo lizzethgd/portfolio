@@ -8,11 +8,11 @@ import '../assets/css/testimonials.css'
 import { useTranslation} from 'react-i18next';
 
 const onButtonClick = () => {
-  document.getElementById("testimonial").style.display = "block";
+  document.getElementById("testimonialForm").style.display = "block";
 } 
 
 const onClouseFullSizeImage = () => {
-  document.getElementById("testimonial").style.display='none'
+  document.getElementById("testimonialForm").style.display='none'
 }
 
 
@@ -78,7 +78,7 @@ const Testimonials = () => {
       <button className='w3-button w3-padding-small w3-medium w3-black w3-opacity w3-hover-opacity-off' style={{float: 'right'}} onClick={onButtonClick}>{t("testimonial.leave")}</button >
      </div>
      
-<div id="testimonial" className="w3-modal  w3-gray">
+<div id="testimonialForm" className="w3-modal w3-gray ">
 <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
   <div className="w3-modal-content w3-animate-zoom">
     <div className="w3-container w3-black">
@@ -87,12 +87,12 @@ const Testimonials = () => {
     <div className="w3-container">
       <p>{t("testimonial.leave")}:</p>
       <form onSubmit={handleSubmit} target="_self">
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="name" value={name} onChange={handleChange}/></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Occupation" required name="occupation" value={occupation} onChange={handleChange}/></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Company (optional)" name="company" value={company} onChange={handleChange}/></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Website (optional)" name="website" value={website} onChange={handleChange}/></p>
-        <p><textarea className="w3-input w3-padding-16 w3-border" type="text" placeholder="Testimonial " required name="message" value={message} onChange={handleChange}/></p>
-        <p><button className="w3-button w3-red" type="submit" >SEND</button></p>
+        <p><input className="w3-input w3-border" type="text" placeholder="Name" required name={t("testimonial.form.name")} value={name} onChange={handleChange}/></p><br/>
+        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder={t("testimonial.form.occupation")} required name="occupation" value={occupation} onChange={handleChange}/></p>
+        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder={t("testimonial.form.company")} name="company" value={company} onChange={handleChange}/></p>
+        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder={t("testimonial.form.website")} name="website" value={website} onChange={handleChange}/></p>
+        <p><textarea className="w3-input w3-padding-16 w3-border" type="text" placeholder={t("testimonial.form.testimonial")} required name="message" value={message} onChange={handleChange}/></p>
+        <p><button className="w3-button w3-red" type="submit" ><i className="fa fa-paper-plane" /> {t("send")}</button></p>
       </form>
     </div>
   </div>

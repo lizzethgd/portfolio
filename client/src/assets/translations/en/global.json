@@ -1,10 +1,11 @@
 {   
     "nav":{
-        "home": "home",
-        "about": "about",
-        "contact":"contact",
-        "portfolio":"portfolio",
-        "testimonials": "testimonials"
+        "home": "HOME",
+        "about": "ABOUT",
+        "contact":"CONTACT",
+        "resume": "RESUME",
+        "portfolio":"PORTFOLIO",
+        "testimonials": "TESTIMONIALS"
     },
     "header":{
         "who": "I'm Lizzeth Garcia",
@@ -19,7 +20,6 @@
         "about":"about me"
     },
     "about":{
-        "me":"About Me",
         "description": "I graduated from Datanomi in the summer of 2017. I was on maternity leave for a few years but I have still done some projects myself to pursue what I have learned and to learn more. As an employee, I am efficient and used to working under pressure. My goal is to work on interesting and challenging issues in jobs that support my professional development ", 
         "download":"  Download Resume",
         "skills" : "Skills",
@@ -31,7 +31,39 @@
             "sp":"Spanish"
         }
     },
+    "resume":{
+        "education" : "Education",
+        "experience" : "Work experience",
+        "schools" : {
+            "01": "Helsinki Busines College" , "02": "Integrify", "03": "Pontificia Uniersidad Catolica del Peru"
+        },
+        "jobs" : {
+            "01": "" , "02": "", "03": ""
+        }
+    },
+    "contact":{
+        "fi": "Finland",
+        "form":{
+            "name":"Name",
+            "email": "Email",
+            "subject": "Subject",
+            "phone": "Phone (optional)",
+            "message": "Message"
+        },
+        "response": " I'd love your response!"
+    },
     "testimonial":{
-        "leave": "Leave your testimonial"
+        "leave": "Leave your testimonial",
+        "form":{
+            "name":"Name",
+            "occupation": "Occupation",
+            "company": "Company (optional)",
+            "website": "Website (optional)",
+            "testimonial": "Testimonial"
+        }    
+    },
+    "send": " SEND",
+    "footer":{
+        "dev": "Developed in React and Node ⚛️ by "
     }
 }

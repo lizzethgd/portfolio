@@ -1,10 +1,11 @@
 {
     "nav":{
-        "home": "start",
-        "about": "about",
-        "contact":"kontakt",
-        "portfolio":"portfolio",
-        "testimonials": "eindrücke "
+        "home": "START",
+        "about": "ÜBER MICH",
+        "contact":"KONTAKT",
+        "resume": "LEBENSLAUF",
+        "portfolio":"PORTFOLIO",
+        "testimonials": "EMPFEHLUNGEN"
     },
     "header":{
         "who": "Ich bin Lizzeth Garcia",
@@ -19,7 +20,6 @@
         "about":"über mich"
     },
     "about":{
-        "me":"Über mich",
         "description": "Ich habe Datanomi im Sommer 2017 abgeschlossen. Ich war einige Jahre im Mutterschaftsurlaub, habe aber selbst noch einige Projekte durchgeführt, um das Gelernte fortzusetzen und mehr zu lernen. Als Mitarbeiter bin ich effizient und gewohnt, unter Druck zu arbeiten. Mein Ziel ist es, an interessanten und herausfordernden Themen in Jobs zu arbeiten, die meine berufliche Entwicklung unterstützen. ",
         "download":"  Lebenslauf herunterladen",
         "skills" : "Fähigkeiten",
@@ -28,9 +28,36 @@
             "fi": "Finnisch", 
             "en": "Englisch", 
             "ge": "Deutsch", 
-            "sp":"Spanisch"}
+            "sp":"Spanisch"
+        }
+    },
+    "resume":{
+        "education" : "Ausbildung",
+        "experience" : "Arbeitserfahrung"
+    },
+    "contact":{
+        "fi": "Finnland",
+        "form":{
+            "name":"Name",
+            "email": "E-Mail",
+            "subject": "Überschrift",
+            "phone": "Telefon (optional)",
+            "message": "Meldung"
+        },
+        "response": " Ich würde mich über deine Antwort freuen!",
+        "send": " SENDEN"
     },
     "testimonial":{
-        "leave": "Geben sie ihren eindruck "
+        "leave": "Geben sie ihren empfehlung ",
+        "form":{
+            "name":"Name",
+            "occupation": "Beruf",
+            "company": "Gesellschaft (optional)",
+            "website": "Webseite (optional)",
+            "testimonial": "Empfehlung"
+        }    
+    },
+    "footer":{
+        "dev": "Entwickelt in React und Node ⚛️ von "
     }
 }

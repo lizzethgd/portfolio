@@ -1,13 +1,13 @@
 import React, { useEffect} from 'react';
 import Swiper from 'swiper/bundle';
 import '../assets/css/swiper.min.css';
-import '../assets/css/timeline.scss'
+import '../assets/css/timeline00.scss'
  
 const bulletFunction = function ( index, className) {
   const year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
   return '<span class="' + className + '">' + year + '</span>'}
 
-const Timeline = () => {
+const Timeline00 = () => {
   
   useEffect(() => {
   const swiper = new Swiper ('.swiper-container', {
@@ -84,6 +84,6 @@ const Timeline = () => {
     )
 }
 
-export default Timeline
+export default Timeline00
 
 

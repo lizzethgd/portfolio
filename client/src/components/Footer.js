@@ -2,8 +2,12 @@ import '../assets/css/footer.css'
 import '../assets/css/general.css'
 import SocialLinks from "./SocialLinks";
 import { FaChevronCircleUp } from "react-icons/fa";
+import { useTranslation} from 'react-i18next';
 
-const Footer = () => (
+const Footer = () => {
+  const { t, i18n } = useTranslation("global");
+  
+  return(
   <footer >
     <div className="row">
       <div className="twelve columns">
@@ -12,14 +16,8 @@ const Footer = () => (
         <ul className="copyright">
           <li>&copy; Copyright {new Date().getFullYear()}</li>
           <li>
-            Design by{" "}
-            <a title="Styleshout" href="http://www.styleshout.com/"> 
-            Styleshout
-            </a>
-          </li> <span>
-            Developed in React ⚛️ by{" "}
-            <a href="http://www.amanhimself.me">Lizzeth Garcia</a>
-          </span>
+          {t("footer.dev")} <a href="#home">Lizzeth Garcia</a>
+          </li>
         </ul>
       </div>
 
@@ -31,5 +29,5 @@ const Footer = () => (
     </div>
   </footer>
 );
-
+}
 export default Footer;
