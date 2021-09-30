@@ -1,7 +1,7 @@
 import '../assets/css/timeline.scss'
 import {useEffect} from 'react'
 
-const TimelineEducation = () => {
+const TimelineResume = () => {
     useEffect(() => {
       let items = document.querySelectorAll(".timeline li");
       
@@ -37,12 +37,44 @@ const TimelineEducation = () => {
   <ul>
     <li id="a"  >
       <div >
-        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        <time>Ingenieria Informatica</time> 
+        Pontificia Universidad Catolica del Peru<br/>
+        4 semestre
       </div>
     </li>
     <li id="b">
       <div>
-        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+        <time>Freelance</time> 
+        Hice algunos trabajos como freelance, en htlm y algo de flash
+      </div>
+    </li>
+    <li id="c">
+      <div>
+        <time>Datanomi</time> 
+       Helsinki Business College<br/>
+       program ohjelmisto valmisuin 2018 vuonna
+
+      </div>
+    </li>
+    <li id="d">
+      <div>
+        <time>LogoTek</time>
+       Trabajo de practicas<br/>
+       Ayudante 
+      </div>
+    </li>
+    <li id="e">
+      <div>
+        <time>Web developer</time>
+        Integrify 
+        <br/>
+        <small>Curso de 9 veces cuyo contenido fue CSS, React, un poco de Node y MongoDB</small>
+        </div>
+    </li>
+    <li id="f">
+      <div>
+        <time>Proyectos en casa</time>
+        algunos proyectos hechos en casa a manera de practica.
       </div>
     </li>
   </ul>
@@ -51,4 +83,4 @@ const TimelineEducation = () => {
     )
 }
 
-export default TimelineEducation
+export default TimelineResume

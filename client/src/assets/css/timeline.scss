@@ -65,43 +65,59 @@ h1 {
 .timeline ul li::before {
   content: "";
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   z-index:3;
   border: 5px solid #fff;
   border-radius: 100px;
   transform: translate(50%, 0%);
   right: 3px;
   font:  normal normal 18px/1 FontAwesome;
-  color: yellow;
+  color: #ff5722;
   text-align: center;  
   padding: 34px 0px;
 }
 
 #a::before {
-  content: "\f51c"+" "+"2150-2103";
-  background: url(https://picsum.photos/1920/?random=1);
+  content: "\f66f"+" "+"2150-2103";
+  background: url('../images/pucp.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 #b::before {
-  content: "\f0b1"+" "+"2150-2103";
-  background: url(https://picsum.photos/1920/?random=2);
+  content: "\f51c"+" "+"2150-2103";
+  background: url('../images/freelance.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
-#c::before {
-  background: url(https://picsum.photos/1920/?random=3);
+#c::before { 
+  content: "\f501"+" "+"2150-2100";
+  background: url('../images/hbc.jpg');
+  background-position: center;
 }
 
 #d::before {
-  background: url(https://picsum.photos/1920/?random=4);
+  content: "\f80d"+" "+"2150-2103";
+  background: url('../images/sitelogic.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
-#e::before {
-  content: "";
-  background: url(https://picsum.photos/1920/?random=5);
+#e::before { 
+  content: "\f5fc"+" "+"2019-2020";
+  background: url('../images/integrify.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 #f::before {
+  content: "\e066"+" "+"2020-2021";
+  background: url(https://picsum.photos/1920/?random=5);
+}
+
+/* #f::before {
   background: url(https://picsum.photos/1920/?random=6);
 }
 
@@ -128,7 +144,7 @@ h1 {
 #l::before {
   background: url(https://picsum.photos/1920/?random=12);
 }
-
+ */
 .timeline ul li div {
   position: relative;
   top: -10px;

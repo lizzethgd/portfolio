@@ -8,8 +8,10 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/src/assets/images/parallax4.jpg');
+  background-image: url('/src/assets/images/parallax1.jpg');
+ /* min-height: 400px; */
 }
+
 
 /* Second image (Portfolio) */
 .bgimg-2 {
