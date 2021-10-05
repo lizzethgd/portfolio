@@ -33,7 +33,27 @@
     },
     "resume":{
         "education" : "Formación",
-        "experience" : "Experiencia de Trabajo"
+        "experience" : "Experiencia de Trabajo",
+        "title" :{
+            "PUCP": "Ingeniería Informática",
+            "freelancer" :"Freelancer",
+            "HBC": "Calificación vocacional en tecnología de la información comercial",
+            "sitelogic" : "Práctica laboral",
+            "integrify": "Desarrollador web (curso)",
+            "home" : "Projectos "
+        },
+        "schools" : {
+            "HBC": "HELSINKI BUSINESS COLLEGE" , 
+            "PUCP": "Pontifical Catholic University of Peru"
+        },
+        "resume" : {
+            "PUCP": " Hasta el 4º semestre" , 
+            "freelancer": " Desarrollo de sitios web con HTML y algo de Flash, ",
+            "HBC": " Cualificación profesional en tecnología de la información empresarial", 
+            "sitelogic" : " Auxiliar y aprendiz (HTML, CSS y PHP), ", 
+            "integrify": " Actualicé y mejoré mi conocimiento sobre HTML y CSS, aprendí React, un poco de Node, MongoDB y Gatsby", 
+            "home" : " Desarrollo de proyectos web por mi propia cuenta para practicar, experimentar y mejorar mis conocimientos, 2020 - presente"
+        }
     },
     "contact":{
         "fi": "Finlandia",

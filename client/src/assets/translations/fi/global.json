@@ -24,7 +24,7 @@
         "download":"  Lataa Ansioluettelo",
         "skills" : "Taidot",
         "langs": {
-            "tittle": "Kielet", 
+            "title": "Kielet", 
             "fi": "Suomi", 
             "en": "Englanti", 
             "ge": "Saksa", 
@@ -33,7 +33,27 @@
     },
     "resume":{
         "education" : "Koulutus",
-        "experience" : "Työkokemus"
+        "experiencer" : "Työkokemus",
+        "title" :{
+            "PUCP": "Tietotekniikka",
+            "freelancer": "Freelancer",
+            "HBC": "Datanomi",
+            "sitelogic" : "Työharjoittelu",
+            "integrify": "Web-kehittäjä (kurssi)",
+            "home" : "Projektit kotona"
+        },
+        "schools" : {
+            "HBC": "SUOMEN LIIKEMIESTEN KAUPPAOPISTO" , 
+            "PUCP": "Pontifical Catholic University of Peru"
+        },
+        "resume" : {
+            "PUCP": " 4. lukukauteen asti, " , 
+            "freelancer": " Verkkosivujen kehittäminen HTML: llä ja Flashilla, ",
+            "HBC": " IT-alan toisen asteen tutkinto, johon sisältyy liiketaloudellisia elementtejä, ", 
+            "sitelogic" : " Avustaja ja harjoittelija (HTML, CSS ja PHP), ", 
+            "integrify": " Päivitin ja paransin tietämystäni HTML: stä ja CSS: stä, opin Reactia, vähän Nodea, MongoDB: tä ja Gatsbyä", 
+            "home" : " Web-projektien kehittäminen omalla tililläni tietämykseni harjoittelussa, kokeneessa ja parantamiseksi, 2000 - nykyinen"
+        }
     },
     "contact":{
         "fi": "Suomi",

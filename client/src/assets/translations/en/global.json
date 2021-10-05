@@ -34,11 +34,25 @@
     "resume":{
         "education" : "Education",
         "experience" : "Work experience",
-        "schools" : {
-            "01": "Helsinki Busines College" , "02": "Integrify", "03": "Pontificia Uniersidad Catolica del Peru"
+        "title" :{
+            "PUCP": "Informatics Engineering",
+            "freelancer" :"Freelancer",
+            "HBC": "Vocational Qualification in Business Information Technology",
+            "sitelogic" : "Internship",
+            "integrify": "Web developer (course)",
+            "home" : "Projects at home"
         },
-        "jobs" : {
-            "01": "" , "02": "", "03": ""
+        "schools" : {
+            "HBC": "HELSINKI BUSINESS COLLEGE" , 
+            "PUCP": "Pontifical Catholic University of Peru"
+        },
+        "resume" : {
+            "PUCP": " Until the 4th semester " , 
+            "freelancer": " Website development in HTML and some Flash, ",
+            "HBC": " Secondary degree in IT with elements of business administration, ", 
+            "sitelogic" : " Assistant and trainee (HTML, CSS and PHP), ", 
+            "integrify": " I updated and improved my knowledge about HTML and CSS, I learned React, a little bit of Node, MongoDB and Gatsby", 
+            "home" : " Development of web projects by my own account for practicing, experiencing and improving my knowledge, 2020 - Present"
         }
     },
     "contact":{

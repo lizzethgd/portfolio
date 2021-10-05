@@ -1,12 +1,16 @@
 import '../assets/css/timeline.scss'
+import { useTranslation} from 'react-i18next'; 
 import {useEffect} from 'react'
+import { FaUniversity, FaLaptopCode, FaUserGraduate, FaChalkboardTeacher} from "react-icons/fa";
+import {GiTeacher} from 'react-icons/gi'
 
 const TimelineResume = () => {
+
+  const { t } = useTranslation("global");   
+
     useEffect(() => {
       let items = document.querySelectorAll(".timeline li");
-      
-        // check if an element is in viewport
-        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    
         const isElementInViewport = (el) => {
           let rect = el.getBoundingClientRect();
           return (
@@ -37,44 +41,44 @@ const TimelineResume = () => {
   <ul>
     <li id="a"  >
       <div >
-        <time>Ingenieria Informatica</time> 
-        Pontificia Universidad Catolica del Peru<br/>
-        4 semestre
+      <time>{t("resume.title.PUCP")}</time> 
+      {t("resume.schools.PUCP")}<br/>
+       <FaUniversity/>{t("resume.resume.PUCP")}2004
       </div>
     </li>
     <li id="b">
       <div>
-        <time>Freelance</time> 
-        Hice algunos trabajos como freelance, en htlm y algo de flash
+        <time>{t("resume.title.freelancer")}</time> 
+        <FaChalkboardTeacher/>{t("resume.resume.freelancer")}2004 - 2007 
       </div>
     </li>
     <li id="c">
       <div>
-        <time>Datanomi</time> 
-       Helsinki Business College<br/>
-       program ohjelmisto valmisuin 2018 vuonna
-
+        <time><small>{t("resume.title.HBC")}</small></time> 
+         {t("resume.schools.HBC")}<br/>
+         <FaUserGraduate/> {t("resume.resume.HBC")}2018
       </div>
     </li>
     <li id="d">
       <div>
-        <time>LogoTek</time>
-       Trabajo de practicas<br/>
-       Ayudante 
+        <time>{t("resume.title.sitelogic")}</time>
+        Site Logic Oy <br/>
+        <FaLaptopCode/>{t("resume.resume.sitelogic")}11/2016 - 01/2017 & 02/2018 - 05/2018 <br/>
       </div>
     </li>
     <li id="e">
       <div>
-        <time>Web developer</time>
-        Integrify 
-        <br/>
-        <small>Curso de 9 veces cuyo contenido fue CSS, React, un poco de Node y MongoDB</small>
+        <time>{t("resume.title.integrify")}</time>
+         Integrify
+         <br/>
+        <GiTeacher/> <small>{t("resume.resume.integrify")}</small>11/2019 - 05/2020
         </div>
     </li>
     <li id="f">
       <div>
-        <time>Proyectos en casa</time>
-        algunos proyectos hechos en casa a manera de practica.
+        <time>{t("resume.title.home")}</time>
+        <i className="fa fa-laptop-house"/>{t("resume.resume.home")}2020 - presente 
+       
       </div>
     </li>
   </ul>

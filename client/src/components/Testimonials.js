@@ -67,7 +67,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
           <li key={testimonial._id}>
              <blockquote>
-                <p>{testimonial.testimonial}</p>
+                <p>{testimonial.testimonial} </p>
                <cite>{testimonial.name}</cite>
                <a href='#'>{testimonial.website}</a>
              </blockquote>

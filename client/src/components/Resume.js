@@ -1,8 +1,7 @@
-import { useTranslation} from 'react-i18next'; import { GiTiedScroll, GiBriefcase, GiBrain } from "react-icons/gi";
-import { MdSchool, MdWork } from "react-icons/md";
-import { FaClipboardList, FaBriefcase, FaBlackTie } from "react-icons/fa"; 
+import { useTranslation} from 'react-i18next'; 
+import { GiTiedScroll } from "react-icons/gi";
+import { FaBriefcase } from "react-icons/fa"; 
 import TimelineResume from './TimelineResume';
-//import image from "../assets/images/parallax4.jpg"
 
 
 const Resume = () => {
@@ -25,13 +24,7 @@ return (
     </div>
 
    <div className="w3-content w3-container w3-padding-16" >
-
-   <TimelineResume/>
-
-    <div className="w3-large w3-text-deep-orange"><GiTiedScroll/><b className="w3-margin-left">{t("resume.education")}</b></div><br/>
- 
-    <div className="w3-large w3-text-deep-orange"><FaBriefcase/><b className="w3-margin-left">{t("resume.experience")}</b></div><br/>
-
+    <TimelineResume/>
    </div> 
 
 </section> 

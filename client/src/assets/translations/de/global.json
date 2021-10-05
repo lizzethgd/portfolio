@@ -33,7 +33,27 @@
     },
     "resume":{
         "education" : "Ausbildung",
-        "experience" : "Arbeitserfahrung"
+        "experience" : "Arbeitserfahrung",
+        "title" :{
+            "PUCP": "Informationstechnik",
+            "freelancer" :"Freiberuflerin",
+            "HBC": "Berufsabschluss in Wirtschaftsinformatik",
+            "sitelogic" : "Praktikum",
+            "integrify": "Web-Entwickler (Kurs)",
+            "home" : "Projekte zu Hause"
+        },
+        "schools" : {
+            "HBC": "HELSINKI BUSINESS COLLEGE" , 
+            "PUCP": "Päpstliche Katholische Universität von Peruu"
+        },
+        "resume" : {
+            "PUCP": " Bis zum 4. Semester " , 
+            "freelancer": " Website-Entwicklung in HTML und etwas Flash, ",
+            "HBC": " Abgeschlossenes Studium der Informatik mit betriebswirtschaftlichen Elementen, ", 
+            "sitelogic" : " Assistent und Trainee (HTML, CSS und PHP), ", 
+            "integrify": " Ich habe mein Wissen über HTML und CSS aktualisiert und verbessert, ich habe React gelernt, ein bisschen Node, MongoDB und Gatsby", 
+            "home" : " Entwicklung von Webprojekten nach meinem eigenen Konto zum Üben, Erleben und Verbessern meines Wissens, 2020 - Aktuell"
+        }
     },
     "contact":{
         "fi": "Finnland",
