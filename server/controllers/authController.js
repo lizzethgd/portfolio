@@ -13,7 +13,7 @@ exports.signin = async (req, res) => {
     const {_id, username, role} = user
 
     const token = JWT.sign({ id: _id },_.JWT_SECRET, {
-        expiresIn: _.JWT_EXPIRES // 24 hours
+        expiresIn: 86400 // 24 hours
       });
 
      //res.setHeader('x-access-token', token) 
@@ -50,7 +50,7 @@ exports.signup = async (req,res) => {
       await newUser.save();
   
       const token = JWT.sign({ id: newUser._id }, _.JWT_SECRET, {
-        expiresIn: _.JWT_EXPIRES, // 24 hours
+        expiresIn: 86400, // 24 hours
       });
       console.log(newUser)
       return res.status(200).json({ token });
