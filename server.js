@@ -1,19 +1,23 @@
 const express = require("express");
+const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-const mongoose = require('mongoose');
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 const cookieParser = require('cookie-parser')
 
 const app = express();
-
 require('dotenv').config();
-app.use(cors());
+
+// Serving static files in express
+app.use(express.static('public'))
+app.use(express.static('public/assets'))
 
 //to understand the form dates
-app.use(express.urlencoded({extended: false}))
+/* app.use(express.urlencoded({extended: false})) */
 app.use(express.json())
+app.use(express.static(path.join(__dirname, './client/build')));
 app.use(cookieParser())
+app.use(cors());
 
 // Database setup
 mongoose.connect(process.env.DATABASE, {
@@ -28,7 +32,7 @@ app.use('/testimonial_form', require('./server/routes/testimonials'));
 app.use('/auth', require('./server/routes/auth'));
 
 // Have Node serve the files for our built React app
-app.use(express.static(path.join(__dirname, '/client/build')));
+// app.use(express.static(path.join(__dirname, '/client/build')));
 
 /* // Handle GET requests to /api route
 app.get("/", (req, res) => {
@@ -37,9 +41,9 @@ app.get("/", (req, res) => {
 
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening for requests on ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server listening for requests on ${port}`);
 });
