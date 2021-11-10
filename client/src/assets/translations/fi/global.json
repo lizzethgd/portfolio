@@ -70,7 +70,7 @@
         "descriptions":{
             "desc00": "",
             "desc01": "",
-            "desc02": "Fiktiivisten ninjojen paikannus Suomessa ja Espanjassa. Ninja-tietokanta on tallennettu MongoDB:hen ja sitä kutsutaan Node-taustajärjestelmästä, tulos näkyy Mapboxin tarjoamassa kartassa ja myös kartan alla olevassa luettelossa. FrontEnd on tehty Reactissa, CSS:ssä ja joissakin MaterialUI:ssa.",
+            "desc02": "Fiktiivisten ninjojen paikannus Suomessa ja Espanjassa. Ninja-tietokanta on tallennettu MongoDB:hen ja sitä kutsutaan Node-taustajärjestelmästä, tulos näkyy Mapboxin tarjoamassa kartassa ja myös kartan alla olevassa luettelossa. FrontEnd on tehty Reactissa ja CSS:ssä.",
             "desc03": "",
             "desc04": "",
             "desc05": "",

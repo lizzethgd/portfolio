@@ -42,7 +42,7 @@ try {
         secure: false, // use TLS
         auth: {
             user: "lizzeth_angela@hotmail.com",
-            pass: process.env.HMPASS
+            pass: process.env.MAILPSS
         //pass: "kncbliyetlwukjpr",
             },
         tls: {

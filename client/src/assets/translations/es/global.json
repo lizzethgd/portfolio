@@ -70,7 +70,7 @@
         "descriptions":{
             "desc00": "",
             "desc01": "",
-            "desc02": "Localizador de ninjas ficticios en los territorios Finlandia y Espana. La base de datos de los ninjas esta almacenada en MongoDB y es llamado desde el backend de Node, el resultado se muestra en un mapa proveido por Mapbox y tambien en un listado bajo el mapa. El FrontEnd esa hecho en React, CSS and some MaterialUI.",
+            "desc02": "Localizador de ninjas ficticios en los territorios Finlandia y Espana. La base de datos de los ninjas esta almacenada en MongoDB y es llamado desde el backend de Node, el resultado se muestra en un mapa proveido por Mapbox y tambien en un listado bajo el mapa. El FrontEnd esa hecho en React y CSS.",
             "desc03": "",
             "desc04": "",
             "desc05": "",

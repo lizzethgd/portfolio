@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 // Database setup
-mongoose.connect(process.env.URI, {
+mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
