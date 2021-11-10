@@ -30,14 +30,14 @@ app.use('/auth', require('./server/routes/auth'));
 // Have Node serve the files for our built React app
 app.use(express.static(path.join(__dirname, '/client/build')));
 
-// Handle GET requests to /api route
+/* // Handle GET requests to /api route
 app.get("/", (req, res) => {
   res.json();
-}); 
+});  */
 
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build/index.html'));
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 app.listen(PORT, () => {
