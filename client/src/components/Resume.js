@@ -1,6 +1,4 @@
 import { useTranslation} from 'react-i18next'; 
-import { GiTiedScroll } from "react-icons/gi";
-import { FaBriefcase } from "react-icons/fa"; 
 import TimelineResume from './TimelineResume';
 
 

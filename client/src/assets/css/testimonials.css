@@ -7,6 +7,7 @@
     min-height: 400px;
     width: 100%;
     overflow: hidden;
+    color: #fff;
   }
   #testimonials .text-container {
     padding: 75px 100px 70px;
@@ -15,22 +16,17 @@
     font: 20px "opensans-bold", sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff;
+    
   }
 
   #testimonials h6 {
     font:  "opensans-bold", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #fff;
   }
 
   #testimonials h1 span {
     display: none;
-  }
-
-  #testimonials a{
-    color: #fff;
   }
 
   #testimonials .header-col {
@@ -44,39 +40,52 @@
     line-height: 72px;
     text-align: left;
     float: left;
-    color: #fff;
   }
   
   /*	Blockquotes */
   #testimonials blockquote {
+    position: relative;
     margin: 0;
     padding: 10px 50px 0;
-    position: relative;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    font-size: large;
   }
-  #testimonials blockquote:before {
-    content: none;
-  }
-  #testimonials blockquote p {
+ 
+  #testimonials blockquote .testimonial {
     font-family: "librebaskerville-italic", serif;
     font-size: 20px;
     line-height: 48px;
-    color: #fff;
+    color: whitesmoke;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    font-style: italic;
+    letter-spacing: 0.5px;
   }
+
+  #testimonials blockquote .testimonial:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: large;
+    padding-right: 1rem;
+  }
+
+  #testimonials blockquote .testimonial:after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+     font-weight: bold;
+     font-size: large;
+     padding-left: 1rem;
+  }
+
   #testimonials blockquote cite {
     display: block;
-    font-size: 12px;
+    letter-spacing: 0.5px;
     font-style: normal;
-    line-height: 18px;
-    color: #fff;
   }
-  #testimonials blockquote cite:before {
-    content: "\2014 \0020";
-  }
-  #testimonials blockquote cite a,
-  #testimonials blockquote cite a:visited {
-    color: #8b9798;
-    border: none;
+ 
+  #testimonials blockquote a,
+  #testimonials blockquote a:visited {
+    text-decoration: none;
+    letter-spacing: 1px;
   }
 
   @media only screen and (max-width: 900px) {
@@ -84,25 +93,57 @@
         font-size: 66px;
         line-height: 66px;
      }
-     #testimonials blockquote p {
+     #testimonials blockquote .testimonial {
         font-size: 22px;
         line-height: 46px;
      }
   }
 
   @media only screen and (max-width: 767px) {
-    #testimonials .text-container { text-align: center; }
+  #testimonials{
+  overflow: scroll;
+  height: auto
+  }
+
+    #testimonials .text-container { 
+      text-align: center; 
+      padding: 55px 45px 45px;
+    }
+
     #testimonials h1 {
        font: 16px/24px 'opensans-bold', sans-serif;
        text-align: center;
        margin-bottom: 30px;
        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
     }
+
     #testimonials h1 span { display: block; }
+
     #testimonials .header-col h1:before { content: none; }
-    #testimonials blockquote { padding-bottom: 24px; }
-    #testimonials blockquote p {
-       font-size: 20px;
+
+    #testimonials blockquote { 
+      font-size: medium;
+      padding: 10px 30px 20px;
+    } 
+
+    #testimonials blockquote .testimonial {
+       font-size: medium;
+       text-align: center;
        line-height: 42px;
     }
-  }
+
+    #testimonials blockquote .testimonial:before {
+      font-size: medium;
+      padding-right: 0.75em;
+    }
+  
+    #testimonials blockquote .testimonial:after {
+       font-size: medium;
+       padding-left: 0.55em;
+    }
+
+    #testimonials blockquote cite {
+      text-align: left;
+    }
+
+}

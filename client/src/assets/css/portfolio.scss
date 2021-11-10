@@ -1,7 +1,7 @@
 //@import url(https://www.w3schools.com/w3css/4/w3.css);
 
 $white: #ffffff;
-$lightBG: #dce1df;
+$lightGrey: #f1f1f1;
 $tealShade:	#007c85;
 $darkGrey: #4f585e;
 $darkBlue: #01050c;
@@ -14,23 +14,27 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 
 
 #cards__container {
-  background: $lightBG;
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
   margin: 50px auto;
-  max-width: 80rem;
+  width: 80em;
   text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  
 }
 
 .card__ {
   background: $white;
   display: inline-block;
-  margin: 20px;
+  margin: 20px 25px;
   max-width: 300px;
   perspective: 1000;
   position: relative;
   transition: all 0.3s 0s ease-in;
-  width: 300px;
+  width: 300px; 
   z-index: 0;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 
@@ -46,7 +50,7 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 
   .card__title {
     background: $white;
-    padding: 6px 15px 10px;
+    padding: 5px 15px 0px;
     position: relative;
     text-align: center;
     z-index: 0;
@@ -60,14 +64,20 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
       padding: 0;  
     }
 
+  }
+  .card__tags{
+    height: 4em;
+    color: $darkGrey;
+    padding: 0px;
+
     small {
-        display: block;
-        font-size: 15px;
-        font-weight: 600;
-        letter-spacing: -0.025em;
-        text-align: left;
-        color: $darkGrey;
-      }
+      padding-left: 2px;
+      font-size: normal;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      text-align: left;
+      vertical-align: top;
+    }
   }
 
   .card__description {
@@ -198,13 +208,9 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
             margin: auto;
       } }
 
-        span{
+      span{
         align-self: flex-start;
         padding: 1em;
-        color: $darkOrange;
-      }
-
-      #_tags{
         color: $darkOrange;
       }
      
@@ -228,9 +234,21 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     filter: blur(3px);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   #cards__container {
-    margin: 10px auto;
+    margin: 3px auto;
+    padding: 0;
+    width: 100vw;
+    align-items: center;
   }
+
+  .card__ {
+    margin: 15px 5px;
+    width: 95%;
+    
+    img {
+      max-width: 100%;
+    }
 }
 
+}

@@ -5,7 +5,6 @@ import {
   FaInstagram,
   FaTwitter
 } from "react-icons/fa"
-// https://gorangajic.github.io/react-icons/fa.html
 
 const SocialLinks = () => (
   <ul className="social">

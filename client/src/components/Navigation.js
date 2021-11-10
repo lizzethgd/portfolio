@@ -1,10 +1,8 @@
 import { useEffect, useState} from 'react';
 import '../assets/css/navigation.scss'
 import {IoHomeSharp, IoLanguageSharp} from "react-icons/io5"
-import {IoMdChatbubbles } from "react-icons/io"
 import {BsPersonBoundingBox, BsGrid3X3GapFill, BsFillChatSquareQuoteFill} from "react-icons/bs"
-import {FaMailBulk, FaClipboardList, FaEnvelope, FaBriefcase } from "react-icons/fa"
-import { VscReferences } from "react-icons/vsc";
+import {FaMailBulk } from "react-icons/fa"
 import { RiClipboardFill } from "react-icons/ri";
 import { useTranslation} from 'react-i18next';
 

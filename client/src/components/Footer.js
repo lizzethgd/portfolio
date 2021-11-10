@@ -8,23 +8,24 @@ const Footer = () => {
   const { t, i18n } = useTranslation("global");
   
   return(
-  <footer >
-    <div className="row">
+  <footer>
+    <div className="row w3-padding-48" >
+
+    <div id="go-top">
+        <a className="smoothscroll" title="Back to Top" href="#home">
+          <FaChevronCircleUp />
+        </a>
+      </div>
+
       <div className="twelve columns">
         <SocialLinks />
 
-        <ul className="copyright">
+        <ul className="copyright ">
           <li>&copy; Copyright {new Date().getFullYear()}</li>
           <li>
           {t("footer.dev")} <a href="#home">Lizzeth Garcia</a>
           </li>
         </ul>
-      </div>
-
-      <div id="go-top">
-        <a className="smoothscroll" title="Back to Top" href="#home">
-          <FaChevronCircleUp />
-        </a>
       </div>
     </div>
   </footer>

@@ -12,7 +12,7 @@
         "description": "I'm a programming lover living in Helsinki who likes to experiment with all kind of code, with experience especially in ",
         "web": "web programming",
         "both": " both ",
-        "and": " and ",
+        "and": " and ", 
         "say": ", it can says that I am ", 
         "but": " of course I am not ",
         "scroll": " Start scrolling",
@@ -24,7 +24,7 @@
         "download":"  Download Resume",
         "skills" : "Skills",
         "langs": {
-            "tittle": "Languages", 
+            "title": "Languages", 
             "fi": "Finnish", 
             "en": "English", 
             "ge": "German", 
@@ -57,9 +57,9 @@
     },
     "portfolio" : {
         "titles":{
-            "title00": "ingles titulo 1",
-            "title01": "ingles titulo 2",
-            "title02": "ingles titulo 3",
+            "title00": "Pharmacies Locator",
+            "title01": "Covid-19 Tracker",
+            "title02": "Ninjas Locator",
             "title03": "",
             "title04": "",
             "title05": "",
@@ -70,7 +70,7 @@
         "descriptions":{
             "desc00": "",
             "desc01": "",
-            "desc02": "",
+            "desc02": "Locator of fictional ninjas in Finland and Spain. The ninja database is stored in MongoDB and is called from the Node backend, the result is displayed on a map provided by Mapbox and also in a list below the map. The FrontEnd is done in React, CSS and some MaterialUI.",
             "desc03": "",
             "desc04": "",
             "desc05": "",

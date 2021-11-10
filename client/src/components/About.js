@@ -6,6 +6,7 @@ import ProgressBar from './ProgressBar'
 import '../assets/css/progressBar.css'
 import profilePic from "../assets/images/profilepic.jpg";
 import { useTranslation} from 'react-i18next';
+import {Link } from 'react-router-dom';
 
 const About = () =>{
   const { t } = useTranslation("global");
@@ -22,9 +23,9 @@ return(
       </div>
       <div className="columns download">
             <p>
-            <button type="button" className="w3-button w3-red w3-margin-bottom">
+            <Link to="/files/LGcv.docx" target="_blank" download className="w3-button w3-red w3-margin-bottom"> 
               <FaCloudDownloadAlt/>&nbsp;&nbsp; {t("about.download")}
-            </button>  
+            </Link>
             </p>
       </div>
   </div>
@@ -36,7 +37,7 @@ return(
           <ProgressBar  start={20} stop={70} name='HTML' />
           
 
-        <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.tittle")}</b></div><br/>
+        <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.title")}</b></div><br/>
           
         <ProgressBar  start={20} stop={70} name={t("about.langs.fi")} />
         <ProgressBar  start={20} stop={60} name={t("about.langs.en")} />

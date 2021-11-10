@@ -14,18 +14,37 @@ const Portfolio = () => {
  let title01 = t("portfolio.titles.title01")
   
     const content= [ 
-      { id: '0', 
-        img: covidTracker,
-        tags : [' HTML', ' CSS', ' ReactJS']
-      },
-      { id: '1',
+      { id: '0',
         img: pharmalocator,
-        tags : [' HTML', ' CSS', ' ReactJS']
+        tags : [' ReactJS', 'Mapbox', 'use-supercluster', 'MaterialUI', 'CSS', 'HTML'],
+        www: 'https://pharmacies-locator.web.app/'
+      },
+      { id: '1', 
+        img: covidTracker,
+        tags : [' ReactJS', 'CSS', 'HTML'],
+        www: 'https://covid-19-tracker-1e543.web.app/'
       },
       { id: '2',
         img: ninjas,
-        tags : ['HTML', 'CSS', 'ReactJS', 'NODE']
-      }
+        tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
+        www: 'https://mern-ninjas-mapbox.herokuapp.com/'
+      },
+      { id: '3',
+      img: pharmalocator,
+      tags : [' ReactJS', 'Mapbox', 'use-supercluster', 'MaterialUI', 'CSS', 'HTML'],
+      www: 'https://pharmacies-locator.web.app/'
+    },
+    { id: '4', 
+      img: covidTracker,
+      tags : [' ReactJS', 'CSS', 'HTML'],
+      www: 'https://covid-19-tracker-1e543.web.app/'
+    },
+    { id: '5',
+      img: ninjas,
+      tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
+      www: 'https://mern-ninjas-mapbox.herokuapp.com/'
+    },
+    
       ]
 
     const Parallax = {
@@ -54,10 +73,8 @@ const Portfolio = () => {
           <div className="card__image-holder">
           <img className="card__image" src={card.img} alt={t("portfolio.titles.title0"+card.id)} />
           </div>
-          <div className="card__title">
-          <h3>{t("portfolio.titles.title0"+card.id)}</h3>
-          <small><FaTags/> {card.tags.join(', ')}</small>
-          </div>
+          <div className="card__title"><h3>{t("portfolio.titles.title0"+card.id)}</h3></div>
+          <div className="card__tags"><FaTags/><small>{card.tags.join(', ')}</small></div> 
         </div>
       
 ))   
