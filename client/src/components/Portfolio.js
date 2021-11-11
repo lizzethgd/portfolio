@@ -98,7 +98,7 @@ return (
 {/* <!-- Modal for full size images on click--> */}
  <div id="modal__card" className="w3-modal w3-gray" >
  <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
- <div className="_wrapper">
+ <div className="_wrapper w3-modal-content">
         <div className="_card">
             <img id='_imagen' alt='#' src="" />
             <div className="_descriptions">
