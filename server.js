@@ -8,10 +8,6 @@ const cookieParser = require('cookie-parser')
 const app = express();
 require('dotenv').config();
 
-// Serving static files in express
-app.use(express.static('public'))
-app.use(express.static('public/assets'))
-
 //to understand the form dates
 /* app.use(express.urlencoded({extended: false})) */
 app.use(express.json())
