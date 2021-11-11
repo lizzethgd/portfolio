@@ -9,9 +9,9 @@ const app = express();
 require('dotenv').config();
 
 //to understand the form dates
-/* app.use(express.urlencoded({extended: false})) */
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.urlencoded({extended: false})) 
 app.use(cookieParser())
 app.use(cors());
 
