@@ -30,14 +30,6 @@ app.use(function(err, req, res, next){
   res.status(422).send({error: err.message});
 });
 
-// Have Node serve the files for our built React app
-// app.use(express.static(path.join(__dirname, '/client/build')));
-
-/* // Handle GET requests to /api route
-app.get("/", (req, res) => {
-  res.json();
-});  */
-
 // Database setup
 mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
