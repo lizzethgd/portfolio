@@ -9,12 +9,12 @@
     },
     "header":{
         "who": "Ich bin Lizzeth Garcia",
-        "description": "Ich bin ein Programmierliebhaber, die in Helsinki lebt und gerne mit allen Arten von Code experimentiert, mit Erfahrung insbesondere in der ",
-        "web": "Web Programmierung",
+        "description": "Ich bin ein Programmierliebhaber, ich lebe in Helsinki und ich gerne mit allen Arten von Code experimentieren mäg, ich habe besondere Erfahrung in der ",
+        "web": "Webentwicklung",
         "both": " sowohl im ",
         "and": " als auch im ",
-        "say": ", das kann sagen, dass ich es bin  ", 
-        "but": " aber natürlich bin ich kein ",
+        "say": ", das kann sagen, dass ich eine Junior ", 
+        "dev": " Webentwickler bin",
         "scroll": "Weiterlesen",
         "learn": " und wissen mehr ",
         "about":"über mich"
@@ -28,7 +28,7 @@
             "fi": "Finnisch", 
             "en": "Englisch", 
             "ge": "Deutsch", 
-            "sp":"Spanisch"
+            "sp": "Spanisch"
         }
     },
     "resume":{

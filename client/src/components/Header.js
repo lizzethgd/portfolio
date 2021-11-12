@@ -1,6 +1,5 @@
 import '../assets/css/header.css'
 import '../assets/css/general.css'
-//import {useState, useEffect} from "react";
 import Navigation from "./Navigation";
 import Banner from "./Banner";
 import ScrollDown from "./ScrollDown";

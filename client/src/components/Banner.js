@@ -15,8 +15,9 @@ return(
         <span>BackEnd</span>
         {t("header.and")}
         <span>FrontEnd</span> {t("header.say")}
-        <span>FullStack</span> 
-        {t("header.but")}Senior. <a className="smoothscroll" href="#about">
+        <span>FullStack</span>
+        {t("header.dev")}. <br/>
+        <a className="smoothscroll" href="#about">
           {" "}
           {t("header.scroll")}
         </a>{" "}
@@ -27,7 +28,7 @@ return(
         </a>
       </h3>
       <hr />
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
   </div>
 );

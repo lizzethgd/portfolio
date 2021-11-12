@@ -9,12 +9,12 @@
     },
     "header":{
         "who": "I'm Lizzeth Garcia",
-        "description": "I'm a programming lover living in Helsinki who likes to experiment with all kind of code, with experience especially in ",
-        "web": "web programming",
+        "description": "I'm a passionate about programming living in Helsinki who likes to experiment with all kind of code,  I have experience especially in ",
+        "web": "web development",
         "both": " both ",
         "and": " and ", 
-        "say": ", it can says that I am ", 
-        "but": " of course I am not ",
+        "say": ", it can be said that I am Junior ", 
+        "dev": " Developer",
         "scroll": " Start scrolling",
         "learn": " and learn more ",
         "about":"about me"
@@ -28,7 +28,7 @@
             "fi": "Finnish", 
             "en": "English", 
             "ge": "German", 
-            "sp":"Spanish"
+            "sp": "Spanish"
         }
     },
     "resume":{

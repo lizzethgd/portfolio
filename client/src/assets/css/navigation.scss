@@ -10,7 +10,6 @@
 /* nav-wrap */
 #nav-wrap {
   font: 12px "opensans-bold", sans-serif;
-
   width: 100%;
   //text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -49,7 +48,9 @@ ul#nav li a,p{
   text-decoration: none;
   text-align: left;
   color: turquoise;
-  font-size: large;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.4em;
+  font-weight: bold;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -70,7 +71,7 @@ ul#nav li p select {
   border-color: transparent;
   color: turquoise;
   font-size: small;
-  width: 7.5rem;
+  width: 8rem;
 } 
 
 @media only screen and (max-width: 767px) {

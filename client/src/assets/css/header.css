@@ -30,24 +30,24 @@ header {
   
   header .banner-text {
     width: 100%;
+    color: #fff;
+
   }
   header .banner-text h1 {
     font: 90px/1.1em "opensans-bold", sans-serif;
-    color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
   }
   header .banner-text h3 {
-    font: 18px/1.9em "librebaskerville-regular", serif;
-    color: #a8a8a8;
+    font: 22px/1.9em "librebaskerville-regular", serif;
     margin: 0 auto;
     width: 70%;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px black;
   }
   header .banner-text h3 span,
   header .banner-text h3 a {
-    color: #fff;
+    font-weight: bold;
   }
   header .banner-text hr {
     width: 60%;
@@ -134,7 +134,7 @@ header {
      }
      header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
      header .banner-text h3 {
-        font: 16px/1.9em 'librebaskerville-regular', serif;
+        font: 18px/1.9em 'librebaskerville-regular', serif;
         width: 85%;
      }
      header .banner-text hr {
@@ -167,7 +167,7 @@ header {
        margin: 0 auto 24px auto;
     }
     header .banner-text h3 {
-       font: 14px/1.9em 'librebaskerville-regular', sans-serif;
+       font: 18px/1.9em 'librebaskerville-regular', sans-serif;
        width: 90%;
     }
    
