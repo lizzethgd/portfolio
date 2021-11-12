@@ -48,9 +48,3 @@ getAdmin : async ()=>{
 },
     
 }
-
-/* if (res.status !== 401)
-      return await res.json().then(data => data);
-else
-      return { isAuthenticated: false, user: { username: "", role: "" } };
-} */

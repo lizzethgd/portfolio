@@ -60,12 +60,12 @@ try {
         html: contentHTML
         })
 
-    /* const feedback = await transporter.sendMail({
+    const feedback = await transporter.sendMail({
         from: "LizzethGD Portafolio Server <lizzeth_angela@hotmail.com>",
         to: email,
         subject: "Lizzeth Portfolio Contact Form",
         text: 'Thank you for your feedback!'
-        }) */
+        }) 
 
     console.log(contentHTML)
     console.log('Message has been sent and contact was added to the DB')
