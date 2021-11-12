@@ -60,6 +60,7 @@ const Testimonials = () => {
 
   return (
   <section id="testimonials" >
+    
   <div className="text-container" >
     <h1>{t("nav.testimonials")}</h1>
         <ul>

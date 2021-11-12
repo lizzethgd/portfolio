@@ -1,5 +1,4 @@
 import '../assets/css/portfolio.scss'
-import '../assets/css/modal.scss'
 import {useTranslation} from 'react-i18next';
 import {CgClose} from "react-icons/cg";
 import {FaTags} from "react-icons/fa";
@@ -28,23 +27,7 @@ const Portfolio = () => {
         img: ninjas,
         tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
         www: 'https://mern-ninjas-mapbox.herokuapp.com/'
-      },
-      { id: '3',
-      img: pharmalocator,
-      tags : [' ReactJS', 'Mapbox', 'use-supercluster', 'MaterialUI', 'CSS', 'HTML'],
-      www: 'https://pharmacies-locator.web.app/'
-    },
-    { id: '4', 
-      img: covidTracker,
-      tags : [' ReactJS', 'CSS', 'HTML'],
-      www: 'https://covid-19-tracker-1e543.web.app/'
-    },
-    { id: '5',
-      img: ninjas,
-      tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
-      www: 'https://mern-ninjas-mapbox.herokuapp.com/'
-    },
-    
+      }
       ]
 
     const Parallax = {
@@ -58,7 +41,7 @@ const Portfolio = () => {
         //e.preventDefault()
         document.getElementById("_imagen").src = content[id].img; 
         document.getElementById("_title").innerHTML = t("portfolio.titles.title0"+id);
-        document.getElementById("_description").innerHTML = "descripcion";
+        document.getElementById("_description").innerHTML = t("portfolio.descriptions.desc0"+id);
         document.getElementById("_tags").innerHTML = content[id].tags.join(',  ');
         document.getElementById("modal__card").style.display = "block";
     } 
@@ -98,17 +81,17 @@ return (
 {/* <!-- Modal for full size images on click--> */}
  <div id="modal__card" className="w3-modal w3-gray" >
  <button className="w3-button w3-red w3-large  w3-display-topright" title="Close Modal Image" onClick={onClouseFullSizeImage} ><CgClose /></button>
- <div className="_wrapper w3-modal-content">
-        <div className="_card">
-            <img id='_imagen' alt='#' src="" />
-            <div className="_descriptions">
-                <h3 id='_title'></h3>
-                <span> <FaTags/> <b id='_tags'></b></span>
-                <p id='_description'></p>
-               < a href="" >{t("portfolio.button")}</a> 
-            </div>
-        </div>      
-    </div>
+  <div className="w3-modal-content w3-animate-zoom w3-gray">
+    <div className="_card ">
+        <img id='_imagen' alt='#' src="" />
+        <div className="_descriptions">
+            <h3 id='_title'></h3>
+            <span> <FaTags/>&nbsp;<b id='_tags'></b></span>
+            <p id='_description'></p>
+            < a href="" >{t("portfolio.button")}</a> 
+        </div>
+    </div>   
+  </div> 
 </div>
 &nbsp;
 </section>       

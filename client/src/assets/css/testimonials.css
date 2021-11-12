@@ -19,29 +19,6 @@
     
   }
 
-  #testimonials h6 {
-    font:  "opensans-bold", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  #testimonials h1 span {
-    display: none;
-  }
-
-  #testimonials .header-col {
-    padding-top: 9px;
-  }
-  #testimonials .header-col h1:before {
-    font-family: "FontAwesome";
-    content: "\f10d";
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-  }
-  
   /*	Blockquotes */
   #testimonials blockquote {
     position: relative;
@@ -100,26 +77,23 @@
   }
 
   @media only screen and (max-width: 767px) {
-  #testimonials{
-  overflow: scroll;
-  height: auto
-  }
+  
+    #testimonials{
+    overflow: scroll;
+    height: auto
+    }
 
     #testimonials .text-container { 
       text-align: center; 
-      padding: 55px 45px 45px;
+      padding: 55px 45px 75px;
     }
 
     #testimonials h1 {
        font: 16px/24px 'opensans-bold', sans-serif;
        text-align: center;
-       margin-bottom: 30px;
+       margin-bottom: 15px;
        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
     }
-
-    #testimonials h1 span { display: block; }
-
-    #testimonials .header-col h1:before { content: none; }
 
     #testimonials blockquote { 
       font-size: medium;
