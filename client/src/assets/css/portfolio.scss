@@ -181,9 +181,12 @@ $box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
       align-self: flex-start;
       padding: 1.1em 0.7em 0.6em;
       color: $darkOrange;
+      font-size: large;
     }
 
     #_description{
+      font-weight: normal;
+      font-size: large;
       line-height: 24px;
       height: 70%;
       text-align: justify;

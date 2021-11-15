@@ -68,9 +68,9 @@
             "title08": ""
         },
         "descriptions":{
-            "desc00": "",
-            "desc01": "",
-            "desc02": "Lokalisierer fiktiver Ninjas in Finnland und Spanien. Die Ninja-Datenbank ist in MongoDB gespeichert und wird aus dem Node-Backend aufgerufen, das Ergebnis wird auf einer von Mapbox bereitgestellten Karte und auch in einer Liste unterhalb der Karte angezeigt. Das FrontEnd wird in React und CSS.",
+            "desc00": "Apotheken-Locator in ganz Finnland, die Daten werden von http://overpass-turbo.eu/ aktualisiert, in das JSON-Format konvertiert und dann auf einer von Mapbox bereitgestellten Karte mit Markierungen angezeigt, die beim Bewegen der Maus Apothekeninformationen anzeigen und beim Anklicken die Apotheke im Hauptmodus. Die App wurde komplett in React JS, CSS und einigen MaterialUI erstellt.",
+            "desc01": "Covid-19 Tracker zeigt die statistischen Daten der Auswirkungen des Virus auf die Weltbevölkerung, wie die Zahl der Todesfälle, der Infizierten und Genesenen sowie der Geimpften. Die Daten werden direkt aus der Disease.sh-API gesammelt. Die App wurde komplett mit ReactJS, CSS und MaterialUI erstellt.",
+            "desc02": "Fiktische Ninjas Lokalisierer in Finnland und Spanien. Die Ninja-Datenbank ist in MongoDB gespeichert und wird aus dem Node-Backend aufgerufen, das Ergebnis wird auf einer von Mapbox bereitgestellten Karte und auch in einer Liste unterhalb der Karte angezeigt. Das FrontEnd wird in React und CSS.",
             "desc03": "",
             "desc04": "",
             "desc05": "",
