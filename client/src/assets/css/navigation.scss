@@ -37,7 +37,7 @@ ul#nav li {
   list-style: none;
   height: 48px;
   display: inline-block;
-  text-shadow: 1px 1px 1px black;
+  /* text-shadow: 1px 1px 1px black; */
 }
 
 /* Links */
@@ -64,7 +64,7 @@ ul#nav li a:active {
 
 ul#nav li.current a {
   color: #f06000;
-  text-shadow: 1px 1px 1px black;
+  /* text-shadow: 1px 1px 1px black; */
 }
 
 ul#nav li p select {

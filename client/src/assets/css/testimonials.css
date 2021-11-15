@@ -79,7 +79,6 @@
   @media only screen and (max-width: 767px) {
   
     #testimonials{
-    overflow: scroll;
     height: auto
     }
 
