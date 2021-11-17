@@ -1,4 +1,5 @@
 import '../assets/css/portfolio.scss'
+import {useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {CgClose} from "react-icons/cg";
 import {FaTags} from "react-icons/fa";
@@ -9,6 +10,8 @@ import ninjas from "../assets/images/ninjas.jpg";
 const Portfolio = () => {
 
   const [t ] = useTranslation("global");
+
+  const [www, setWww] = useState("")
  
  let title01 = t("portfolio.titles.title01")
   
@@ -44,10 +47,12 @@ const Portfolio = () => {
         document.getElementById("_description").innerHTML = t("portfolio.descriptions.desc0"+id);
         document.getElementById("_tags").innerHTML = content[id].tags.join(',  ');
         document.getElementById("modal__card").style.display = "block";
+        setWww(content[id].www)
     } 
       
     const onClouseFullSizeImage = () => {
         document.getElementById("modal__card").style.display='none'
+        setWww("")
     }  
       
  const cards = content.map(card => (
@@ -88,7 +93,7 @@ return (
             <h3 id='_title'></h3>
             <span> <FaTags/>&nbsp;<b id='_tags'></b></span>
             <p id='_description'></p>
-            < a href="" >{t("portfolio.button")}</a> 
+            < a href={www} >{t("portfolio.button")}</a> 
         </div>
     </div>   
   </div> 
