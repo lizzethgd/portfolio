@@ -3,6 +3,7 @@ import {useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {CgClose} from "react-icons/cg";
 import {FaTags} from "react-icons/fa";
+import recipepad from "../assets/images/recipepad.jpg";
 import covidTracker from "../assets/images/covid-tracker.jpg";
 import pharmalocator from "../assets/images/pharmalocator.jpg";
 import ninjas from "../assets/images/ninjas.jpg";
@@ -17,16 +18,21 @@ const Portfolio = () => {
   
     const content= [ 
       { id: '0',
+        img: recipepad,
+        tags : ['Node', 'ReactJS', 'Cloudinary', 'Multer', 'Sharp', 'CSS', 'HTML'],
+        www: 'https://recipe-pad.herokuapp.com/'
+      },
+      { id: '1',
         img: pharmalocator,
         tags : [' ReactJS', 'Mapbox', 'use-supercluster', 'MaterialUI', 'CSS', 'HTML'],
         www: 'https://pharmacies-locator.web.app/'
       },
-      { id: '1', 
+      { id: '2', 
         img: covidTracker,
         tags : [' ReactJS', 'CSS', 'HTML'],
         www: 'https://covid-19-tracker-1e543.web.app/'
       },
-      { id: '2',
+      { id: '3',
         img: ninjas,
         tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
         www: 'https://mern-ninjas-mapbox.herokuapp.com/'

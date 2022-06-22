@@ -57,10 +57,10 @@
     },
     "portfolio" : {
         "titles":{
-            "title00": "Localizador de farmacias",
-            "title01": "Covid-19 rastreador",
-            "title02": "Localizador de ninjas",
-            "title03": "",
+            "title00": "Bloc digital de recetas",
+            "title01": "Localizador de farmacias",
+            "title02": "Covid-19 rastreador",
+            "title03": "Localizador de ninjas",
             "title04": "",
             "title05": "",
             "title06": "",
@@ -68,10 +68,10 @@
             "title08": ""
         },
         "descriptions":{
-            "desc00": "Localizador de farmacias en todo Finlandia, los datos son actualizados desde http://overpass-turbo.eu/, convertidos a formato json  y luego mostrados en un mapa provisto por Mapbox con marcadores, el cual al posar el mouse por encima muestrainformación de la farmacia y si se clickea muestra la farmacia en modo principal. La app se hizo integramente en React JS, CSS and algo de MaterialUI.",
-            "desc01": "Covid-19 rastreador,  muestra los datos estadisticos del efecto del virus en la poblacion mundial, tales como numero de muertos, infectados y recuperados, asi como vacunados. Los datos son recogidos directamte de la api disease.sh. La app fue hecha en totalidad con ReactJS, CSS and MaterialUI.",
-            "desc02": "Localizador de ninjas ficticios en los territorios Finlandia y Espana. La base de datos de los ninjas esta almacenada en MongoDB y es llamado desde el backend de Node, el resultado se muestra en un mapa proveido por Mapbox y tambien en un listado bajo el mapa. El FrontEnd esa hecho en React y CSS.",
-            "desc03": "",
+            "desc00": "Bloc digital para compartir recetas, no es necesario registrarse para buscar recetas, pero es necesario registrarse para compartir recetas. La base de datos de recetas se almacena en MongoDB y se llama desde el backend de Node y ReactJS se usa para Frontend.",
+            "desc01": "Localizador de farmacias en todo Finlandia, los datos son actualizados desde http://overpass-turbo.eu/, convertidos a formato json  y luego mostrados en un mapa provisto por Mapbox con marcadores, el cual al posar el mouse por encima muestrainformación de la farmacia y si se clickea muestra la farmacia en modo principal. La app se hizo integramente en React JS, CSS and algo de MaterialUI.",
+            "desc02": "Covid-19 rastreador,  muestra los datos estadisticos del efecto del virus en la poblacion mundial, tales como numero de muertos, infectados y recuperados, asi como vacunados. Los datos son recogidos directamte de la api disease.sh. La app fue hecha en totalidad con ReactJS, CSS and MaterialUI.",
+            "desc03": "Localizador de ninjas ficticios en los territorios Finlandia y Espana. La base de datos de los ninjas esta almacenada en MongoDB y es llamado desde el backend de Node, el resultado se muestra en un mapa proveido por Mapbox y tambien en un listado bajo el mapa. El FrontEnd esa hecho en React y CSS.",
             "desc04": "",
             "desc05": "",
             "desc06": "",

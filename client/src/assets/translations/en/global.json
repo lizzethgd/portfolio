@@ -57,10 +57,10 @@
     },
     "portfolio" : {
         "titles":{
-            "title00": "Pharmacies Locator",
-            "title01": "Covid-19 Tracker",
-            "title02": "Ninjas Locator",
-            "title03": "",
+            "title00": "Recipe virtual pad",
+            "title01": "Pharmacies Locator",
+            "title02": "Covid-19 Tracker",
+            "title03": "Ninjas Locator",
             "title04": "",
             "title05": "",
             "title06": "",
@@ -68,10 +68,10 @@
             "title08": ""
         },
         "descriptions":{
-            "desc00": "Pharmacy locator throughout Finland, the data is updated from http://overpass-turbo.eu/, converted to json format and then displayed on a map provided by Mapbox with markers, which when hovering the mouse shows  pharmacy informationand if clicked it shows the pharmacy in main mode. The app was made entirely in React JS, CSS and some MaterialUI.",
-            "desc01": "Covid-19 tracker, shows the statistical data of the effect of the virus on the world population, such as the number of deaths, infected and recovered, as well as vaccinated. The data is collected directly from the disease.sh api. The app was made entirely with ReactJS, CSS and MaterialUI.",
-            "desc02": "Fictional ninja locator in Finland and Spain. The ninja database is stored in MongoDB and is called from the Node backend, the result is displayed on a map provided by Mapbox and also in a list below the map. The FrontEnd is done in React and CSS.",
-            "desc03": "",
+            "desc00": "Digital pad to share recipes, no registration required to search for recipes but registration is required to share recipes. The recipes database is stored in MongoDB and is called from the Node backend and ReactJS is used for Frontend.",
+            "desc01": "Pharmacy locator throughout Finland, the data is updated from http://overpass-turbo.eu/, converted to json format and then displayed on a map provided by Mapbox with markers, which when hovering the mouse shows  pharmacy informationand if clicked it shows the pharmacy in main mode. The app was made entirely in React JS, CSS and some MaterialUI.",
+            "desc02": "Covid-19 tracker, shows the statistical data of the effect of the virus on the world population, such as the number of deaths, infected and recovered, as well as vaccinated. The data is collected directly from the disease.sh api. The app was made entirely with ReactJS, CSS and MaterialUI.",
+            "desc03": "Fictional ninja locator in Finland and Spain. The ninja database is stored in MongoDB and is called from the Node backend, the result is displayed on a map provided by Mapbox and also in a list below the map. The FrontEnd is done in ReactJS and CSS.",
             "desc04": "",
             "desc05": "",
             "desc06": "",

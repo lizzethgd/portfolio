@@ -1,31 +1,25 @@
 import {
-  FaFacebook,
+  FaLinkedin,
   FaGithub,
-  FaGooglePlus,
-  FaInstagram,
-  FaTwitter
+  FaDiscord,
+  FaTelegram,
 } from "react-icons/fa"
 
 const SocialLinks = () => (
   <ul className="social">
     <li>
       <a href="#">
-        <FaFacebook />
+        <FaLinkedin />
       </a>
     </li>
     <li>
       <a href="#">
-        <FaTwitter />
+        <FaDiscord />
       </a>
     </li>
     <li>
       <a href="#">
-        <FaGooglePlus />
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <FaInstagram />
+        <FaTelegram />
       </a>
     </li>
     <li>

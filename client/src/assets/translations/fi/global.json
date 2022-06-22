@@ -57,10 +57,10 @@
     },
     "portfolio" : {
         "titles":{
-            "title00": "Apteekkipaikannus",
-            "title01": "Covid-19-seurantaohjelma",
-            "title02": "ninjoja paikallistaja",
-            "title03": "",
+            "title00": "Resepti digitaalinen alusta",
+            "title01": "Apteekkipaikannus",
+            "title02": "Covid-19-seurantaohjelma",
+            "title03": "ninjoja paikallistaja",
             "title04": "",
             "title05": "",
             "title06": "",
@@ -68,10 +68,10 @@
             "title08": ""
         },
         "descriptions":{
-            "desc00": "Apteekkipaikannus kaikkialla Suomessa, tiedot päivitetään osoitteesta http://overpass-turbo.eu/, muunnetaan json-muotoon ja näytetään sitten Mapboxin tarjoamalla kartalla merkinnöillä, joka hiirtä vietäessä näyttää apteekin tiedot ja napsautettuna apteekki päätilassa. Sovellus tehtiin kokonaan React JS:ssä, CSS:ssä ja joissakin MaterialUI:issa.",
-            "desc01": "Covid-19-seurantaohjelma näyttää tilastotiedot viruksen vaikutuksista maailman väestöön, kuten kuolleiden, tartunnan saaneiden ja toipuneiden sekä rokotettujen lukumäärän. Tiedot kerätään suoraan taudista.sh api. Sovellus tehtiin kokonaan ReactJS:llä, CSS:llä ja MaterialUI:lla.",
-            "desc02": "Fiktioiden ninjoja paikallistaja Suomessa ja Espanjassa. Ninja-tietokanta on tallennettu MongoDB:hen ja sitä kutsutaan Node-taustajärjestelmästä, tulos näkyy Mapboxin tarjoamassa kartassa ja myös kartan alla olevassa luettelossa. FrontEnd on tehty Reactissa ja CSS:ssä.",
-            "desc03": "",
+            "desc00": "Digitaalinen alusta reseptien jakamiseen, reseptien etsiminen ei vaadi rekisteröitymistä, mutta reseptien jakaminen edellyttää rekisteröitymistä. Reseptitietokanta on tallennettu MongoDB:hen ja sitä kutsutaan Node-taustajärjestelmästä, ja ReactJS:ää käytetään käyttöliittymässä.",
+            "desc01": "Apteekkipaikannus kaikkialla Suomessa, tiedot päivitetään osoitteesta http://overpass-turbo.eu/, muunnetaan json-muotoon ja näytetään sitten Mapboxin tarjoamalla kartalla merkinnöillä, joka hiirtä vietäessä näyttää apteekin tiedot ja napsautettuna apteekki päätilassa. Sovellus tehtiin kokonaan React JS:ssä, CSS:ssä ja joissakin MaterialUI:issa.",
+            "desc02": "Covid-19-seurantaohjelma näyttää tilastotiedot viruksen vaikutuksista maailman väestöön, kuten kuolleiden, tartunnan saaneiden ja toipuneiden sekä rokotettujen lukumäärän. Tiedot kerätään suoraan taudista.sh api. Sovellus tehtiin kokonaan ReactJS:llä, CSS:llä ja MaterialUI:lla.",
+            "desc03": "Fiktioiden ninjoja paikallistaja Suomessa ja Espanjassa. Ninja-tietokanta on tallennettu MongoDB:hen ja sitä kutsutaan Node-taustajärjestelmästä, tulos näkyy Mapboxin tarjoamassa kartassa ja myös kartan alla olevassa luettelossa. FrontEnd on tehty Reactissa ja CSS:ssä.",
             "desc04": "",
             "desc05": "",
             "desc06": "",

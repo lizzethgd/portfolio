@@ -23,7 +23,7 @@ const Footer = () => {
         <ul className="copyright ">
           <li>&copy; Copyright {new Date().getFullYear()}</li>
           <li>
-          {t("footer.dev")} <a href="#home">Lizzeth Garcia</a>
+          {t("footer.dev")} <a className="name" href="#home">Lizzeth Garcia</a>
           </li>
         </ul>
       </div>
