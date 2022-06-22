@@ -8,22 +8,22 @@ import {
 const SocialLinks = () => (
   <ul className="social">
     <li>
-      <a href="#">
+      <a href="https://www.linkedin.com/in/lizzeth-garcia-27b841b4">
         <FaLinkedin />
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://discord.gg/kUAvYXT8">
         <FaDiscord />
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://t.me/LizzethGD">
         <FaTelegram />
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://github.com/lizzethgd">
         <FaGithub />
       </a>
     </li>
