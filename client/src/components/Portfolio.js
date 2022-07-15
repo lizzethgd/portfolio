@@ -13,8 +13,6 @@ const Portfolio = () => {
   const [t ] = useTranslation("global");
 
   const [www, setWww] = useState("")
- 
- let title01 = t("portfolio.titles.title01")
   
     const content= [ 
       { id: '0',

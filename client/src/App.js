@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -26,15 +26,3 @@ const App = () => {
 }
 
 export default App;
-
-{/*  <BrowserRouter>
-      <Route exact path="/" component={Home} />
-      <Route  path="/login" component={Login} />
-      <Route  path="/admin" component={Admin} />
- ..     <Route  path="/testimonialsList" component={TestimonialsList} />
-      <Route path="/contactsList"  component={ContactsList} />
-      <Route  path="/usersList"  component={UsersList} />
-    </BrowserRouter> 
-  
-  
-  */}

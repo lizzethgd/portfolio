@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react'
-import AuthService from '../services/AuthService';
+import {logIn, logUp} from '../services/AuthService';
 import {AuthContext} from '../Context/AuthContext';
 import { CgClose } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
@@ -26,7 +26,7 @@ const Login = props => {
 
     const handleSubmitLogin =  (e) => {
         e.preventDefault();
-            AuthService.logIn(userLogin).then(data=>{
+            logIn(userLogin).then(data=>{
                 console.log(data);
                 const { isAuthenticated,user} = data;
                 if(isAuthenticated){
@@ -43,7 +43,7 @@ const Login = props => {
     const handleSubmitLogup = e => {
         try{
         e.preventDefault();
-        AuthService.logUp(userLogup)
+        logUp(userLogup)
     }catch(err){console.log(err.message)}
     
       }   

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import { CgClose } from "react-icons/cg";
 import "slick-carousel/slick/slick-theme.css";
-import TestimonialService from '../services/TestimonialService'
+import {sendTestimonial, getTestimonials} from '../services/TestimonialService'
 import '../assets/css/testimonials.css'
 import { useTranslation} from 'react-i18next';
 
@@ -40,7 +40,7 @@ const Testimonials = () => {
   const {name, occupation, company, website, message} = testimonial
 
   useEffect(()=>{
-    TestimonialService.getTestimonials().then(data =>{
+    getTestimonials().then(data =>{
        setTestimonials(data)
         });
     },[]);
@@ -52,7 +52,7 @@ const Testimonials = () => {
   
   const handleSubmit = e => {
     e.preventDefault();
-    TestimonialService.sendTestimonial(name, occupation, company, website, message)
+    sendTestimonial(name, occupation, company, website, message)
     onClouseFullSizeImage()
   }
 

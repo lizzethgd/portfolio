@@ -24,7 +24,7 @@ const Navigation = () => {
       setPathname(window.location.href);
     })
     setCurrentLang(i18n.language)
-  })
+  }, [i18n.language])
 
   const langChange = e => {
 

@@ -1,7 +1,7 @@
-import {useState,useContext,useEffect} from 'react';
+/* import {useState,useContext,useEffect} from 'react';
 import NavAdmin from "./NavAdmin"
 import { AuthContext } from '../Context/AuthContext';
-import AuthService from '../services/AuthService';
+import AuthService from '../services/AuthService'; */
 
 const Admin = props => {
 

@@ -1,5 +1,4 @@
-export default {
-logIn : async user => {
+export const logIn = async user => {
   const res = await fetch('auth/signin', {
       method: 'POST',
       body: JSON.stringify(user),
@@ -11,22 +10,22 @@ logIn : async user => {
       return res.json();
     else
       return { isAuthenticated: false, user: { username: "", role: "" } };
-},
+}
 
-logOut : async () => {
+export const logOut = async () => {
   const res = await fetch('auth/signout');
   return await res.json();
-},
+}
 
-getAuthentication : async ()=>{
-  const res = await fetch('/auth/authenticated');
+export const getAuthentication = async () => {
+  const res = await fetch('auth/authenticated');
   if (res.status !== 401)
     return res.json();
   else
     return { isAuthenticated: false, user: { username: "", role: "" } };
-},
+}
   
-logUp : async user =>{
+export const logUp = async user => {
   const res = await fetch('auth/signup', {
     method: "POST",
     body: JSON.stringify(user),
@@ -35,9 +34,9 @@ logUp : async user =>{
     }
   });
   return await res.json();
-},
+}
 
-getAdmin : async ()=>{
+export const getAdmin = async () => {
   const res = await fetch('auth/admin');
   if (res.status !== 401) {
     return res.json()
@@ -45,6 +44,4 @@ getAdmin : async ()=>{
 
   else
     return { message: { msgBody: "UnAuthorized", msgError: true } };
-},
-    
 }

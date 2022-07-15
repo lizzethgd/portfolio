@@ -20,7 +20,7 @@ const ProgressBar = ({start, stop, name}) => {
         }
          move()
 
-    }, [])
+    }, [stop, width])
 
     
 

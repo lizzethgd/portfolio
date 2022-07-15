@@ -1,4 +1,3 @@
-import SocialLinks from "./SocialLinks";
 import { useTranslation} from 'react-i18next';
 
 const Banner = () => {
