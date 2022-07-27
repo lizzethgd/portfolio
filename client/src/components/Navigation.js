@@ -2,9 +2,9 @@ import { useEffect, useState} from 'react';
 import '../assets/css/navigation.scss'
 import {IoHomeSharp, IoLanguageSharp} from "react-icons/io5"
 import {BsPersonBoundingBox, BsGrid3X3GapFill, BsFillChatSquareQuoteFill} from "react-icons/bs"
-import {FaMailBulk } from "react-icons/fa"
-import { RiClipboardFill } from "react-icons/ri";
-import { useTranslation} from 'react-i18next';
+import {FaMailBulk} from "react-icons/fa"
+import {RiClipboardFill} from "react-icons/ri";
+import {useTranslation} from 'react-i18next';
 
 const isCurrent = (anchor, pathname) => (
   pathname.endsWith(anchor) ? 'current' : ''
@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const [pathname, setPathname] = useState('#home');
 
-  const [currentLang, setCurrentLang] = useState()
+  const [currentLang, setCurrentLang] = useState('')
 
 
   useEffect(() => {
