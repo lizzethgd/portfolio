@@ -1,7 +1,7 @@
 import {
   FaLinkedin,
   FaGithub,
-  FaDiscord,
+  FaStackOverflow,
   FaTelegram,
 } from "react-icons/fa"
 
@@ -13,8 +13,8 @@ const SocialLinks = () => (
       </a>
     </li>
     <li>
-      <a href="https://discord.gg/kUAvYXT8">
-        <FaDiscord />
+      <a href="https://stackoverflow.com/users/12558623/lizzeth-gardi">
+        <FaStackOverflow />
       </a>
     </li>
     <li>

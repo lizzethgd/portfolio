@@ -25,7 +25,7 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    sendMail(name, email, phone, subject, message, contact_me)
+    sendMail(name, email, phone, subject, message)
     setMail({ ...mail, name: '', email: '',  phone: '', subject: '',   message: ''})
     //setContact_me(false)
   }
