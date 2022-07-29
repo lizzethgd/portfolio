@@ -77,7 +77,7 @@ const TimelineResume = () => {
     <li id="f">
       <div>
         <time>{t("resume.title.home")}</time>
-        <i className="fa fa-laptop-house"/>{t("resume.resume.home")}2020 - presente 
+        <i className="fa fa-laptop-house"/>{t("resume.resume.home")}
        
       </div>
     </li>
