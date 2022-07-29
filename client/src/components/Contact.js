@@ -13,7 +13,7 @@ const Contact = () => {
     message: ''
   })  
 
-  const [contact_me, setContact_me] =useState(false)
+  //const [contact_me, setContact_me] =useState(false)
   
   const {name, email, phone, subject, message} = mail
   
@@ -21,13 +21,13 @@ const Contact = () => {
     setMail({ ...mail, [e.target.name]: e.target.value })
 }
 
-  const handleCheckbox = () =>{setContact_me(!contact_me)}
+  //const handleCheckbox = () =>{setContact_me(!contact_me)}
 
   const handleSubmit = e => {
     e.preventDefault();
     sendMail(name, email, phone, subject, message, contact_me)
     setMail({ ...mail, name: '', email: '',  phone: '', subject: '',   message: ''})
-    setContact_me(false)
+    //setContact_me(false)
   }
 
   const Parallax = {
@@ -77,8 +77,8 @@ return (
           </div>
             <textarea className="w3-input w3-border w3-hover-border-teal" type="text" placeholder={t("contact.form.message")} required name='message' value={message} onChange={handleChange}/>
           <div className="w3-section">
-          <input className="w3-check " type="checkbox" name="contact_me" checked={contact_me} onChange={handleCheckbox}/>
-          <label><em>{t("contact.response")}</em></label>
+          {/* <input className="w3-check " type="checkbox" name="contact_me" checked={contact_me} onChange={handleCheckbox}/>
+              <label><em>{t("contact.response")}</em></label> */}
           <button className="w3-button w3-right w3-teal" type="submit" >
             <i className="fa fa-paper-plane" />{t("send")}
           </button>
