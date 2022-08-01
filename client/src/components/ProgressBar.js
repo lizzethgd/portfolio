@@ -1,13 +1,13 @@
 import {useState, useEffect} from 'react'
 
-const ProgressBar2 = ({percent, time, name}) => {
+const ProgressBar2 = ({percent, name}) => {
 
     const [width, setWidth] = useState(0);
     const [value, setValue] = useState('');
 
  useEffect(()=>{
     setWidth(percent) 
-    setInterval(() => setValue(percent+'%'), time)
+    setInterval(() => setValue(percent+'%'), 7500)
     },[]) 
 
     

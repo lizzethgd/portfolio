@@ -31,16 +31,16 @@ return(
   </div>
   <div className="w3-content w3-container w3-padding-32" >
         <div className="w3-large w3-text-deep-orange"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></div><br/>
-          <ProgressBar percent={70} time={6000} name='REACT' />
-          <ProgressBar percent={70} time={6000} name='NODE' />
-          <ProgressBar percent={65} time={5900} name='CSS' />
-          <ProgressBar percent={70} time={6000} name='HTML' />     
+          <ProgressBar percent={70} name='REACT' />
+          <ProgressBar percent={70} name='NODE' />
+          <ProgressBar percent={65} name='CSS' />
+          <ProgressBar percent={70} name='HTML' />     
 
         <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.title")}</b></div><br/>
-          <ProgressBar percent={70} time={6000} name={t("about.langs.fi")} />      
-        <ProgressBar  percent={60} time={5900} name={t("about.langs.en")} />
-        <ProgressBar  percent={30} time={5900} name={t("about.langs.ge")} />
-        <ProgressBar  percent={100} time={9000} name={t("about.langs.sp")} />
+          <ProgressBar percent={70} name={t("about.langs.fi")} />      
+        <ProgressBar  percent={60} name={t("about.langs.en")} />
+        <ProgressBar  percent={30} name={t("about.langs.ge")} />
+        <ProgressBar  percent={100} name={t("about.langs.sp")} />
 
   </div>
 </section>
