@@ -15,7 +15,7 @@ const ProgressBar2 = ({percent, name}) => {
 return(
 <>
     <div className="w3-light-grey w3-round-xlarge" style={{width: '100%'}}>
-        <div className="w3-container w3-round-xlarge w3-teal" style={{width: `${width}%` , transition: 'width 8s ease-in-out'/* , transition: '5s ease' */}}>
+        <div className="w3-container w3-round-xlarge w3-teal" style={{width: `${width}%` , transition: '8s ease'}}>
             <div className="w3-left " ><b>{name}</b></div>
             <div className="w3-right "><b>{value}</b></div>
         </div>
