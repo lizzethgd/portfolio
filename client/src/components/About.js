@@ -39,7 +39,7 @@ return(
         <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.title")}</b></div><br/>
           <ProgressBar percent={70} name={t("about.langs.fi")} />      
         <ProgressBar  percent={60} name={t("about.langs.en")} />
-        <ProgressBar  percent={30} name={t("about.langs.ge")} />
+        <ProgressBar  percent={35} name={t("about.langs.ge")} />
         <ProgressBar  percent={100} name={t("about.langs.sp")} />
 
   </div>
