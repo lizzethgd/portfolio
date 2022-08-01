@@ -1,6 +1,5 @@
 import '../assets/css/general.css'
 import '../assets/css/about.css'
-//import {useEffect, useState, useRef} from 'react'
 import { FaCloudDownloadAlt, FaTools, FaGlobe } from "react-icons/fa";
 import ProgressBar from './ProgressBar'
 import '../assets/css/progressBar.css'
@@ -10,6 +9,7 @@ import {Link } from 'react-router-dom';
 
 const About = () =>{
   const { t } = useTranslation("global");
+
 
 return(
 <section id="about">
@@ -31,18 +31,16 @@ return(
   </div>
   <div className="w3-content w3-container w3-padding-32" >
         <div className="w3-large w3-text-deep-orange"><FaTools/><b className="w3-margin-left">{t("about.skills")}</b></div><br/>
-          <ProgressBar  start={20} stop={80} name='REACT' />
-          <ProgressBar  start={20} stop={80} name='NODE' />
-          <ProgressBar  start={20} stop={60} name='CSS' />
-          <ProgressBar  start={20} stop={70} name='HTML' />
-          
+          <ProgressBar percent={70} time={6000} name='REACT' />
+          <ProgressBar percent={70} time={6000} name='NODE' />
+          <ProgressBar percent={65} time={5900} name='CSS' />
+          <ProgressBar percent={70} time={6000} name='HTML' />     
 
         <div className="w3-large w3-text-deep-orange"><FaGlobe/><b className="w3-margin-left">{t("about.langs.title")}</b></div><br/>
-          
-        <ProgressBar  start={20} stop={70} name={t("about.langs.fi")} />
-        <ProgressBar  start={20} stop={60} name={t("about.langs.en")} />
-        <ProgressBar  start={20} stop={30} name={t("about.langs.ge")} />
-        <ProgressBar  start={20} stop={100} name={t("about.langs.sp")} />
+          <ProgressBar percent={70} time={6000} name={t("about.langs.fi")} />      
+        <ProgressBar  percent={60} time={5900} name={t("about.langs.en")} />
+        <ProgressBar  percent={30} time={5900} name={t("about.langs.ge")} />
+        <ProgressBar  percent={100} time={9000} name={t("about.langs.sp")} />
 
   </div>
 </section>

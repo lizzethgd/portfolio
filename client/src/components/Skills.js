@@ -1,4 +1,7 @@
 import {FaTools} from "react-icons/fa"
+import {useState} from 'react'
+
+const [value, setValue] = React.useState(0);
 
 const Skills = () => {
     return (
