@@ -6,29 +6,23 @@ body, html {
   line-height: 1.8;
 }
 
-
-/* .bgimg-1, .bgimg-2, .bgimg-3 {
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-#cv {
+/* First image (Logo. Full height) */
+#bgimg-1 {
   background: #1f1f1f url('/src/assets/images/parallax1.jpg') no-repeat bottom center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
- /* min-height: 400px; */
-}
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/src/assets/images/parallax1.jpg');
- /* min-height: 400px; */
+  min-height: 400px;
 }
 
 
 /* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/src/assets/images/parallax2.jpg");
-   /*min-height: 400px;*/
+#bgimg-2 {
+  background: #1f1f1f url('/src/assets/images/parallax2.jpg') no-repeat bottom center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+  min-height: 400px;
 }
 
 /* Third image (Contact) */

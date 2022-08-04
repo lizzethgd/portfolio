@@ -37,13 +37,6 @@ const Portfolio = () => {
       }
       ]
 
-    const Parallax = {
-        backgroundAttachment: 'fixed',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-    }
-
     const onCardClick = (id) => {
         //e.preventDefault()
         document.getElementById("_imagen").src = content[id].img; 
@@ -74,7 +67,7 @@ const Portfolio = () => {
 return (   
 <section id="portfolio" className="w3-light-grey">
 {/* <!-- Second Parallax Image with Portfolio Text --> */}
-<div className="bgimg-2 w3-display-container " style={Parallax}>
+<div id="bgimg-2" className="w3-display-container " >
     <div className="w3-display-middle">
         <span className="w3-xxlarge w3-text-white w3-wide">{t("nav.portfolio")}</span>
     </div>
