@@ -9,10 +9,6 @@ body, html {
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-size: cover;
   -webkit-background-size: cover !important;
-  background-attachment: fixed; 
-  -webkit-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* First image (Logo. Full height) */

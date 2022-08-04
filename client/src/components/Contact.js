@@ -30,11 +30,19 @@ const Contact = () => {
     setMail({ ...mail, name: '', email: '',  phone: '', subject: '',   message: ''})
     //setContact_me(false)
   }
+
+ const Parallax = {
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+     
+  } 
     
   const { t } = useTranslation("global");
 return (
 <section id="contact" className="w3-light-grey" >
-  <div className="bgimg-3 w3-display-container " style={{backgroundAttachment: 'fixed'}} >
+  
+  <div className="bgimg-3 w3-display-container " style={Parallax} >
     <div className="w3-display-middle">
       <span className="w3-xxlarge w3-text-white w3-wide">{t("nav.contact")}</span>
     </div>
