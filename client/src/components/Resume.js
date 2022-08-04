@@ -21,7 +21,7 @@ return (
         </div>
     </div>
 
-   <div className="w3-content w3-container w3-padding-small" >
+   <div className="w3-content w3-container w3-padding-16" >
     <TimelineResume/>
     <br/>
    </div> 
