@@ -26,9 +26,12 @@ body, html {
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/src/assets/images/parallax3.jpg");
-  /*min-height: 400px;*/
+#bgimg-3 {
+  background: #1f1f1f url('/src/assets/images/parallax2.jpg') no-repeat bottom center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+  min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
