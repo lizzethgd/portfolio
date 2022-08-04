@@ -7,8 +7,8 @@ body, html {
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  background-size: cover;
-  -webkit-background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* First image (Logo. Full height) */
