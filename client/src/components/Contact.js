@@ -32,8 +32,8 @@ const Contact = () => {
   }
 
  const Parallax = {
-      backgroundAttachment: 'fixed',
-      backgroundSize: 'cover'
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed'
   } 
     
   const { t } = useTranslation("global");
