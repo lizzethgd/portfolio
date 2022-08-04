@@ -16,7 +16,7 @@ body, html {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
-  min-height: 400px;
+ /* min-height: 400px; */
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
