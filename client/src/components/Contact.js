@@ -32,7 +32,7 @@ const Contact = () => {
   }
 
  const Parallax = {
-      backgroundPosition: 'center center',
+      backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed'

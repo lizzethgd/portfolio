@@ -39,7 +39,7 @@ const Portfolio = () => {
 
     const Parallax = {
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     }

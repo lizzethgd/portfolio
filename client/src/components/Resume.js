@@ -15,7 +15,7 @@ const Resume = () => {
 
 return (
 <section id="resume" className="w3-light-grey">
-    <div className="bgimg-1 w3-display-container " style={Parallax}>
+    <div id="cv" className="w3-display-container" >
         <div className="w3-display-middle">
             <span className="w3-xxlarge w3-text-white w3-wide">{t("nav.resume")}</span>
         </div>
