@@ -10,12 +10,12 @@ return(
       <h1 className="responsive-headline">{t("header.who")}</h1>
       <h3>{t("header.description")}
         <span>{t("header.web")}</span>
+        {t("header.comma")}
         {t("header.both")}
         <span>BackEnd</span>
         {t("header.and")}
-        <span>FrontEnd</span> {t("header.say")}
-        <span>FullStack</span>
-        {t("header.dev")}. <br/>
+        <span>FrontEnd</span> {t("header.which")}
+        <span>FullStack</span>. <br/>
         <a className="smoothscroll" href="#about">
           {" "}
           {t("header.scroll")}

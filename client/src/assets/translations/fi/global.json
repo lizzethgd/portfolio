@@ -9,12 +9,13 @@
     },
     "header":{
         "who": "Olen Lizzeth Garcia",
-        "description": "Olen intohimoinen ohjelmointiin, asun Helsingissä ja tykkään kokeilla kaikenlaista koodia. Kokemusta erityisesti ",
-        "web": "web -ohjelmoinnista ",
+        "description": "Asun Helsingissä ja olen kiinnostunut ohjelmoinnista yleisesti, vaikka suurin osa kokemuksestani tulee ",
+        "web": "web-kehityksestä ",
         "both": " sekä ",
         "and": " että ",
-        "say": ", Junior ", 
+        "which": ", joka on ", 
         "dev": " Web-kehittäjä ",
+        "comma": ",",
         "scroll": " Aloita vieritys",
         "learn": " ja lue lisää ",
         "about":"minusta"

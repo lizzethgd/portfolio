@@ -9,12 +9,12 @@
     },
     "header":{
         "who": "I'm Lizzeth Garcia",
-        "description": "I'm a passionate about programming living in Helsinki who likes to experiment with all kind of code,  I have experience especially in ",
+        "description": "I live in Helsinki, I'm interested in programming in general although most of my experience comes from ",
         "web": "web development",
+        "comma": ",",
         "both": " both ",
         "and": " and ", 
-        "say": ", Junior ", 
-        "dev": " Developer",
+        "which": ", wich is ", 
         "scroll": " Start scrolling",
         "learn": " and learn more ",
         "about":"about me"
