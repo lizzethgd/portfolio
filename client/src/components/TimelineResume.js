@@ -39,31 +39,11 @@ const TimelineResume = () => {
     return (
 <section className="timeline">
   <ul>
-    <li id="a"  >
-      <div >
-      <time>{t("resume.title.PUCP")}</time> 
-      {t("resume.schools.PUCP")}<br/>
-       <FaUniversity/>{t("resume.resume.PUCP")}2004
-      </div>
-    </li>
-    <li id="b">
+    <li id="f">
       <div>
-        <time>{t("resume.title.freelancer")}</time> 
-        <FaChalkboardTeacher/>{t("resume.resume.freelancer")}2004 - 2007 
-      </div>
-    </li>
-    <li id="c">
-      <div>
-        <time><small>{t("resume.title.HBC")}</small></time> 
-         {t("resume.schools.HBC")}<br/>
-         <FaUserGraduate/> {t("resume.resume.HBC")}2018
-      </div>
-    </li>
-    <li id="d">
-      <div>
-        <time>{t("resume.title.sitelogic")}</time>
-        Site Logic Oy <br/>
-        <FaLaptopCode/>{t("resume.resume.sitelogic")}11/2016 - 01/2017 & 02/2018 - 05/2018 <br/>
+        <time>{t("resume.title.home")}</time>
+        <i className="fa fa-laptop-house"/>{t("resume.resume.home")}
+       
       </div>
     </li>
     <li id="e">
@@ -74,11 +54,31 @@ const TimelineResume = () => {
         <GiTeacher/> <small>{t("resume.resume.integrify")}</small>11/2019 - 05/2020
         </div>
     </li>
-    <li id="f">
+    <li id="d">
       <div>
-        <time>{t("resume.title.home")}</time>
-        <i className="fa fa-laptop-house"/>{t("resume.resume.home")}
-       
+        <time>{t("resume.title.sitelogic")}</time>
+        Site Logic Oy <br/>
+        <FaLaptopCode/>{t("resume.resume.sitelogic")}11/2016 - 01/2017 & 02/2018 - 05/2018 <br/>
+      </div>
+    </li>
+    <li id="c">
+      <div>
+        <time><small>{t("resume.title.HBC")}</small></time> 
+         {t("resume.schools.HBC")}<br/>
+         <FaUserGraduate/> {t("resume.resume.HBC")}2018
+      </div>
+    </li>
+    <li id="b">
+      <div>
+        <time>{t("resume.title.freelancer")}</time> 
+        <FaChalkboardTeacher/>{t("resume.resume.freelancer")}2004 - 2007 
+      </div>
+    </li>
+    <li id="a"  >
+      <div >
+      <time>{t("resume.title.PUCP")}</time> 
+      {t("resume.schools.PUCP")}<br/>
+       <FaUniversity/>{t("resume.resume.PUCP")}2004
       </div>
     </li>
   </ul>

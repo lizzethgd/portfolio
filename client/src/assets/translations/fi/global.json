@@ -9,13 +9,12 @@
     },
     "header":{
         "who": "Olen Lizzeth Garcia",
-        "description": "Asun Helsingissä ja olen kiinnostunut ohjelmoinnista yleisesti, vaikka suurin osa kokemuksestani tulee ",
-        "web": "web-kehityksestä ",
-        "both": " sekä ",
-        "and": " että ",
-        "which": ", joka on ", 
-        "dev": " Web-kehittäjä ",
-        "comma": ",",
+        "description": "Asun Helsingissä ja olen kiinnostunut ohjelmoinnista yleisesti. Suurin osa kokemuksestani tulee ",
+        "web": "nettisivu-kehityksestä ",
+        "have": ", minulla on ",
+        "skill": "-osaaminen ",
+        "and": " ja ", 
+        "bracket": ").",
         "scroll": " Aloita vieritys",
         "learn": " ja lue lisää ",
         "about":"minusta"
@@ -53,7 +52,7 @@
             "HBC": " IT-alan toisen asteen tutkinto, johon sisältyy liiketaloudellisia elementtejä, ", 
             "sitelogic" : " Avustaja ja harjoittelija (HTML, CSS ja PHP), ", 
             "integrify": " Päivitin ja paransin tietämystäni HTML: stä ja CSS: stä, opin Reactia, vähän Nodea, MongoDB: tä ja Gatsbyä", 
-            "home" : " Web-projektien kehittäminen omalla tililläni tietämykseni harjoittelussa, kokeneessa ja parantamiseksi, 2000 - nykyinen"
+            "home" : " Web-projektien kehittäminen oman tietämykseni vahvistamiseksi ja osaamiseni ylläpitämiseksi, 2000 - nykyinen"
         }
     },
     "portfolio" : {

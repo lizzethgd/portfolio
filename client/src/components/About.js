@@ -3,7 +3,7 @@ import '../assets/css/about.css'
 import { FaCloudDownloadAlt, FaTools, FaGlobe } from "react-icons/fa";
 import ProgressBar from './ProgressBar'
 import '../assets/css/progressBar.css'
-import profilePic from "../assets/images/profilepic.jpg";
+import lagd from "../assets/images/lagd.jpg";
 import { useTranslation} from 'react-i18next';
 import {Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ return(
 <section id="about">
   <div className="row">
     <div className="three columns">
-        <img className="profile-pic" src={profilePic} alt="" />
+        <img className="profile-pic" src={lagd} alt="" />
     </div>
     <div className="nine columns main-col">
         <h2>{t("nav.about")}</h2>

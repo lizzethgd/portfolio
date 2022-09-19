@@ -9,12 +9,12 @@
     },
     "header":{
         "who": "I'm Lizzeth Garcia",
-        "description": "I live in Helsinki, I'm interested in programming in general although most of my experience comes from ",
-        "web": "web development",
-        "comma": ",",
-        "both": " both ",
+        "description": "I live in Helsinki, I'm interested in programming in general. Most of my experience comes from ",
+        "web": "web development ",
+        "have": ", I have ",
+        "skill": " skills (",
         "and": " and ", 
-        "which": ", wich is ", 
+        "bracket": ").",
         "scroll": " Start scrolling",
         "learn": " and learn more ",
         "about":"about me"
@@ -52,7 +52,7 @@
             "HBC": " Secondary degree in IT with elements of business administration, ", 
             "sitelogic" : " Assistant and trainee (HTML, CSS and PHP), ", 
             "integrify": " I updated and improved my knowledge about HTML and CSS, I learned React, a little bit of Node, MongoDB and Gatsby", 
-            "home" : " Development of web projects by my own account for practicing, experiencing and improving my knowledge, 2020 - Present"
+            "home" : " Developing web projects to strengthen my own knowledge and maintain my skills, 2020 - Present"
         }
     },
     "portfolio" : {

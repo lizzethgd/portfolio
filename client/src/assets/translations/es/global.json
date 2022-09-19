@@ -9,12 +9,11 @@
     },
     "header":{
         "who": "Soy Lizzeth Garcia",
-        "description": "Vivo en Helsinki, me interesa la programación en general aunque la mayor parte de mi experiencia proviene del ",
+        "description": "Vivo en Helsinki, me interesa la programación en general. La mayor parte de mi experiencia proviene del  ",
         "web": "desarrollo web",
-        "comma": ",",
-        "both": " tanto ",
-        "and": " como ",
-        "which": ", lo que es ", 
+        "have": ", tengo habilidades ",
+        "skill": " (",
+        "and": " y ", 
         "scroll": "Continua leyendo",
         "learn": " y conoce más ",
         "about":"sobre mi"
@@ -52,7 +51,7 @@
             "HBC": " Cualificación profesional en tecnología de la información empresarial", 
             "sitelogic" : " Auxiliar y aprendiz (HTML, CSS y PHP), ", 
             "integrify": " Actualicé y mejoré mi conocimiento sobre HTML y CSS, aprendí React, un poco de Node, MongoDB y Gatsby", 
-            "home" : " Desarrollo de proyectos web por mi propia cuenta para practicar, experimentar y mejorar mis conocimientos, 2020 - presente."
+            "home" : " Desarrollar proyectos web para fortalecer mis propios conocimientos y mantener mis habilidades, 2020 - presente."
         }
     },
     "portfolio" : {
