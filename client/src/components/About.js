@@ -8,8 +8,8 @@ import { useTranslation} from 'react-i18next';
 import {Link } from 'react-router-dom';
 
 const About = () =>{
-  const { t } = useTranslation("global");
 
+  const { t, i18n } = useTranslation("global");
 
 return(
 <section id="about">
@@ -23,7 +23,7 @@ return(
       </div>
       <div className="columns download">
             <p>
-            <Link to="/files/LGcv.docx" target="_blank" download className="w3-button w3-red w3-margin-bottom"> 
+            <Link to={i18n.language=="fi" ? "/files/LGcv.pdf" : "/files/LGcvEn.pdf" } target="_blank" download className="w3-button w3-red w3-margin-bottom"> 
               <FaCloudDownloadAlt/>&nbsp;&nbsp; {t("about.download")}
             </Link>
             </p>
