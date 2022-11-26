@@ -33,7 +33,7 @@ const Portfolio = () => {
       { id: '3',
         img: ninjas,
         tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
-        www: 'https://mern-ninjas-mapbox.herokuapp.com/'
+        www: 'https://ninjas-maplocator.herokuapp.com/'
       }
       ]
 
