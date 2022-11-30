@@ -18,7 +18,7 @@ const Portfolio = () => {
       { id: '0',
         img: recipepad,
         tags : ['Node', 'ReactJS', 'Cloudinary', 'Multer', 'Sharp', 'CSS', 'HTML'],
-        www: 'https://recipe-pad.herokuapp.com/'
+        www: 'https://recipepad.onrender.com/'
       },
       { id: '1',
         img: pharmalocator,
@@ -33,7 +33,7 @@ const Portfolio = () => {
       { id: '3',
         img: ninjas,
         tags : [' NODE', 'MongoDB', 'ReactJS', 'Mapbox', 'Bootstrap', 'CSS', 'HTML' ],
-        www: 'https://ninjas-maplocator.herokuapp.com/'
+        www: 'https://ninjaslocator.onrender.com/'
       }
       ]
 
