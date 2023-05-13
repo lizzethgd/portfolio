@@ -23,7 +23,7 @@ return(
       </div>
       <div className="columns download">
             <p>
-            <Link to={i18n.language=="fi" ? "/files/LGcv.pdf" : "/files/LGcvEn.pdf" } target="_blank" download className="w3-button w3-red w3-margin-bottom"> 
+            <Link to={i18n.language==="fi" ? "/files/LGcv.pdf" : "/files/LGcvEn.pdf" } target="_blank" download className="w3-button w3-red w3-margin-bottom"> 
               <FaCloudDownloadAlt/>&nbsp;&nbsp; {t("about.download")}
             </Link>
             </p>

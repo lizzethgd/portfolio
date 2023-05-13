@@ -8,7 +8,7 @@ const ProgressBar2 = ({percent, name}) => {
  useEffect(()=>{
     setWidth(percent) 
     setInterval(() => setValue(percent+'%'), 7500)
-    },[]) 
+    },[percent]) 
 
     
 
