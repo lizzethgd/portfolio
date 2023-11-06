@@ -90,7 +90,7 @@ return (
             <h3 id='_title'></h3>
             <span> <FaTags/>&nbsp;<b id='_tags'></b></span>
             <p id='_description'></p>
-            < a href={www} >{t("portfolio.button")}</a> 
+            < a href={www} target="_blank" >{t("portfolio.button")}</a> 
         </div>
     </div>   
   </div> 
