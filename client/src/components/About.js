@@ -15,7 +15,7 @@ return(
 <section id="about">
   <div className="row">
     <div className="three columns">
-        <img className="profile-pic" src={lagd} alt="" />
+        <img className="profile-pic" src={lagd} alt="lizzeth" />
     </div>
     <div className="nine columns main-col">
         <h2>{t("nav.about")}</h2>
